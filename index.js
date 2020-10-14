@@ -47,6 +47,7 @@ var konamiCodePosition = 0
 
 // add keydown event listener
 document.addEventListener('keydown', function (e) {
+  console.log('konami?')
   // get the value of the key code from the key map
   var key = allowedKeys[e.keyCode]
   // get the value of the required key from the konami code

@@ -11,19 +11,14 @@ body {
   /* trbidi="on" */
 }
 
-.img-right {
-  float: right;
-  padding-left: 5px;
-}
-
 .paragraph-div {
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
-.caption {
+/* .caption {
   text-align: center;
-}
+} */
 
 .hero-image {
   background-image: url('images/Background Image copy 2.jpg');
@@ -151,4 +146,8 @@ body {
   .modal-content {
     width: 100%;
   }
+}
+
+figure {
+  align-self: right;
 }
