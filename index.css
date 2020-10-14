@@ -6,6 +6,23 @@ body {
   background-color: #992b2b;
   margin-right: 200px;
   margin-left: 200px;
+  /* dir: ltr; */
+  text-align: left;
+  /* trbidi="on" */
+}
+
+.img-right {
+  float: right;
+  padding-left: 5px;
+}
+
+.paragraph-div {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.caption {
+  text-align: center;
 }
 
 .hero-image {
