@@ -6,10 +6,22 @@ body {
   background-color: #992b2b;
   margin-right: 200px;
   margin-left: 200px;
+  /* dir: ltr; */
+  text-align: left;
+  /* trbidi="on" */
 }
 
+.paragraph-div {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* .caption {
+  text-align: center;
+} */
+
 .hero-image {
-  background-image: url('images/Background Image copy.jpg');
+  background-image: url('images/Background Image copy 2.jpg');
   background-color: #992b2b; /* Used if the image is unavailable */
   /* background-position: center; */
   /* background-repeat: repeat; */
@@ -134,4 +146,8 @@ body {
   .modal-content {
     width: 100%;
   }
+}
+
+figure {
+  align-self: right;
 }

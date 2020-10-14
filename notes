@@ -20,3 +20,26 @@
   background-repeat: repeat; /* Do not repeat the image */
   /*  background-size: cover; Resize the background image to cover the entire container */
 } */
+
+        <table
+          cellpadding="0"
+          cellspacing="0"
+          class="tr-caption-container"
+          style="float: right; margin-left: 1em;"
+        >
+          <tbody>
+            <tr>
+              <td style="text-align: center;"></td>
+            </tr>
+            <tr>
+              <td
+                class="tr-caption"
+                style="font-size: 12.8px; text-align: center;"
+              >
+                <span style="font-family: inherit; font-size: small;"
+                  >Kashmiri Shawl&nbsp;</span
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
