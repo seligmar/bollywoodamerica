@@ -1,497 +1,352 @@
-<div dir="ltr" style="text-align: left;" trbidi="on">
-  <div dir="ltr" style="text-align: left;" trbidi="on">
-    <div class="separator" style="clear: both; text-align: center;"></div>
-    <div class="separator" style="clear: both; text-align: center;"></div>
-    <table
-      cellpadding="0"
-      cellspacing="0"
-      class="tr-caption-container"
-      style="float: left; margin-right: 1em; text-align: left;"
-    >
-      <tbody>
-        <tr>
-          <td style="text-align: center;">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bollywood America</title>
+    <link
+      rel="icon"
+      href="
+data:image/png;base64,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"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/Users/maryselig/Documents/bollywoodamerica/index.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="/Users/maryselig/Documents/bollywoodamerica/index.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="home">
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <span class="close">×</span>
+        <img class="modal-content" id="img01" />
+        <div id="caption"></div>
+      </div>
+
+          <table
+            cellpadding="0"
+            cellspacing="0"
+            class="tr-caption-container"
+            style="float: left; margin-right: 1em; text-align: left;"
+          >
+            <tbody>
+              <tr>
+                <td style="text-align: center;">
+                  <a
+                    href="https://2.bp.blogspot.com/-nQClpm38Up8/XJ60tWohyUI/AAAAAAAABBw/2nUpgf1nEKQivD_E0DbOjK5x1u4J46EZQCLcBGAs/s1600/Jesuits_at_Akbar%2527s_court%2B-%2BCopy.jpg"
+                    imageanchor="1"
+                    style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"
+                    ><img
+                    id="myImg1"
+                      alt="Jesuits at Akbar's court"
+                      border="0"
+                      data-original-height="1493"
+                      data-original-width="819"
+                      height="320"
+                      src="https://2.bp.blogspot.com/-nQClpm38Up8/XJ60tWohyUI/AAAAAAAABBw/2nUpgf1nEKQivD_E0DbOjK5x1u4J46EZQCLcBGAs/s320/Jesuits_at_Akbar%2527s_court%2B-%2BCopy.jpg"
+                      title="Jesuits at Akbar's court"
+                      width="175"
+                  /></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="tr-caption" style="text-align: center;">
+                  <a
+                    href="https://en.wikipedia.org/wiki/File:Jesuits_at_Akbar%27s_court.jpg"
+                    ><span style="color: black;"
+                      >Jesuits at Akbar's Court<br />by Nar Singh, ca.
+                      1605</span
+                    ></a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <i
+            ><a href="https://www.imdb.com/title/tt0449994/?ref_=fn_al_tt_1"
+              >Jodhaa Akbar</a
+            >&nbsp;</i
+          >(2008), imagined as a spiritual and chronological prequel to
+          <i
+            ><a href="https://www.imdb.com/title/tt0054098/?ref_=nv_sr_1"
+              >Mughal-e-Azim</a
+            ></i
+          >
+          (1960) tells the story of the
+          <a href="https://en.wikipedia.org/wiki/Akbar"
+            >Emperor Jalal-ud-din Muhammad Akbar</a
+          >- known as Akbar the Great-&nbsp;(<a
+            href="https://www.imdb.com/name/nm0004335/?ref_=tt_ov_st_sm"
+            >Hrithik Roshan</a
+          >), and his Hindu Rajput wife from Amer, who may or may not have been
+          named Jodhaa Baai (<a
+            href="https://www.imdb.com/name/nm0706787/?ref_=tt_ov_st_sm"
+            >Aishwarya Rai</a
+          >). The title of this woman has come down through the mists of history
+          as&nbsp;<i
+            ><a href="https://en.wikipedia.org/wiki/Mariam-uz-Zamani"
+              >Mariam-uz-Zamani</a
+            ></i
+          >
+          (Mariam of the Age), as she was the mother of
+          <a href="https://en.wikipedia.org/wiki/Jahangir">Jahangir</a>, heir to
+          the Mughal throne. She was also one of many wives, but why should
+          history get in the way of a movie-ready myth. Interestingly, Mariam of
+          the Age was an astute and aggressive businesswoman, but evidently her
+          mind wasn't deemed interesting enough to warrant her own&nbsp;<a
+            href="https://www.imdb.com/title/tt0993846/?ref_=nv_sr_1"
+            ><i>The Wolf of Wall Street</i></a
+          >
+          (2013) style film.<br />
+          <div >
+            <br />
+            <i>Jodhaa Akbar</i>&nbsp;is instead a sweeping romance of love
+            across faiths, overcoming scheming interlopers, and hitting the
+            arranged-marriage jackpot. The film doubles down on the religious
+            tolerance for which Akbar's reign is rightfully famous. He opened
+            the administration of his empire up to bureaucrats of any religion,
+            and abolished faith-based pilgrim taxes. He pursued alliances across
+            faiths and invited allied nobles to join his court. He joined his
+            Hindu wives in worship and celebration. His&nbsp;<a
+              href="https://en.wikipedia.org/wiki/Ibadat_Khana"
+              ><i>ibadat khana</i></a
+            >&nbsp;(house of worship) in&nbsp;<a
+              href="https://en.wikipedia.org/wiki/Fatehpur_Sikri"
+              >Fatehpur Sikri</a
+            >, his erstwhile capital, found Hindu, Roman Catholic, Zoroastrian,
+            Jain, Islamic and atheist thinkers together discussing
+            theology.&nbsp;Extremism was discouraged,
             <a
-              href="https://2.bp.blogspot.com/-nQClpm38Up8/XJ60tWohyUI/AAAAAAAABBw/2nUpgf1nEKQivD_E0DbOjK5x1u4J46EZQCLcBGAs/s1600/Jesuits_at_Akbar%2527s_court%2B-%2BCopy.jpg"
-              imageanchor="1"
-              style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"
-              ><img
-                alt="Jesuits at Akbar's court"
-                border="0"
-                data-original-height="1493"
-                data-original-width="819"
-                height="320"
-                src="https://2.bp.blogspot.com/-nQClpm38Up8/XJ60tWohyUI/AAAAAAAABBw/2nUpgf1nEKQivD_E0DbOjK5x1u4J46EZQCLcBGAs/s320/Jesuits_at_Akbar%2527s_court%2B-%2BCopy.jpg"
-                title="Jesuits at Akbar's court"
-                width="175"
-            /></a>
-          </td>
-        </tr>
-        <tr>
-          <td class="tr-caption" style="text-align: center;">
-            <a
-              href="https://en.wikipedia.org/wiki/File:Jesuits_at_Akbar%27s_court.jpg"
-              ><span style="color: black;"
-                >Jesuits at Akbar's Court<br />by Nar Singh, ca. 1605</span
-              ></a
+              href="https://pakistanhorizon.wordpress.com/2015/01/13/dr-masuma-hasan-akbar-and-the-women-in-his-empire/"
+              >as was <i>sati</i></a
+            >, and under Akbar the Mughal Empire grew in size and influence.<br />
+            <br />
+            <div class="embed-container">
+              <iframe
+                allowfullscreen=""
+                frameborder="0"
+                mozallowfullscreen=""
+                src="https://www.youtube.com/embed/Pam8tXa6pkM?feature=player_embedded"
+                webkitallowfullscreen=""
+              ></iframe>
+            </div>
+            <br />
+            The film does not double down on the intelligence of Jodhaa, who is
+            lovely and "spirited" in the "she can do xyz as well as any man"
+            way. But being proud is not the same thing as being interesting. It
+            is definitely&nbsp;<a href="https://twitter.com/potus?lang=en"
+              >not the same thing as being smart</a
+            >. Aside from a political science 101 lecture, we never have any
+            indication that Jodhaa is interested in anything besides Akbar.
+            Unless you count that scene where she is playing with rabbits? And
+            rabbits are really more a metaphor than an interest.<br />
+            <br />
+            <table
+              cellpadding="0"
+              cellspacing="0"
+              class="tr-caption-container"
+              style="clear: left; float: right; margin-bottom: 1em; margin-left: 1em; text-align: right;"
             >
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <i
-      ><a href="https://www.imdb.com/title/tt0449994/?ref_=fn_al_tt_1"
-        >Jodhaa Akbar</a
-      >&nbsp;</i
-    >(2008), imagined as a spiritual and chronological prequel to
-    <i
-      ><a href="https://www.imdb.com/title/tt0054098/?ref_=nv_sr_1"
-        >Mughal-e-Azim</a
-      ></i
-    >
-    (1960) tells the story of the
-    <a href="https://en.wikipedia.org/wiki/Akbar"
-      >Emperor Jalal-ud-din Muhammad Akbar</a
-    >- known as Akbar the Great-&nbsp;(<a
-      href="https://www.imdb.com/name/nm0004335/?ref_=tt_ov_st_sm"
-      >Hrithik Roshan</a
-    >), and his Hindu Rajput wife from Amer, who may or may not have been named
-    Jodhaa Baai (<a href="https://www.imdb.com/name/nm0706787/?ref_=tt_ov_st_sm"
-      >Aishwarya Rai</a
-    >). The title of this woman has come down through the mists of history
-    as&nbsp;<i
-      ><a href="https://en.wikipedia.org/wiki/Mariam-uz-Zamani"
-        >Mariam-uz-Zamani</a
-      ></i
-    >
-    (Mariam of the Age), as she was the mother of
-    <a href="https://en.wikipedia.org/wiki/Jahangir">Jahangir</a>, heir to the
-    Mughal throne. She was also one of many wives, but why should history get in
-    the way of a movie-ready myth. Interestingly, Mariam of the Age was an
-    astute and aggressive businesswoman, but evidently her mind wasn't deemed
-    interesting enough to warrant her own&nbsp;<a
-      href="https://www.imdb.com/title/tt0993846/?ref_=nv_sr_1"
-      ><i>The Wolf of Wall Street</i></a
-    >
-    (2013) style film.<br />
-    <div style="text-align: left;">
-      <br />
-      <i>Jodhaa Akbar</i>&nbsp;is instead a sweeping romance of love across
-      faiths, overcoming scheming interlopers, and hitting the arranged-marriage
-      jackpot. The film doubles down on the religious tolerance for which
-      Akbar's reign is rightfully famous. He opened the administration of his
-      empire up to bureaucrats of any religion, and abolished faith-based
-      pilgrim taxes. He pursued alliances across faiths and invited allied
-      nobles to join his court. He joined his Hindu wives in worship and
-      celebration. His&nbsp;<a href="https://en.wikipedia.org/wiki/Ibadat_Khana"
-        ><i>ibadat khana</i></a
-      >&nbsp;(house of worship) in&nbsp;<a
-        href="https://en.wikipedia.org/wiki/Fatehpur_Sikri"
-        >Fatehpur Sikri</a
-      >, his erstwhile capital, found Hindu, Roman Catholic, Zoroastrian, Jain,
-      Islamic and atheist thinkers together discussing theology.&nbsp;Extremism
-      was discouraged,
-      <a
-        href="https://pakistanhorizon.wordpress.com/2015/01/13/dr-masuma-hasan-akbar-and-the-women-in-his-empire/"
-        >as was <i>sati</i></a
-      >, and under Akbar the Mughal Empire grew in size and influence.<br />
-      <br />
-      <div class="embed-container">
-        <iframe
-          allowfullscreen=""
-          frameborder="0"
-          mozallowfullscreen=""
-          src="https://www.youtube.com/embed/Pam8tXa6pkM?feature=player_embedded"
-          webkitallowfullscreen=""
-        ></iframe>
-      </div>
-      <br />
-      The film does not double down on the intelligence of Jodhaa, who is lovely
-      and "spirited" in the "she can do xyz as well as any man" way. But being
-      proud is not the same thing as being interesting. It is definitely&nbsp;<a
-        href="https://twitter.com/potus?lang=en"
-        >not the same thing as being smart</a
-      >. Aside from a political science 101 lecture, we never have any
-      indication that Jodhaa is interested in anything besides Akbar. Unless you
-      count that scene where she is playing with rabbits? And rabbits are really
-      more a metaphor than an interest.<br />
-      <br />
-      <table
-        cellpadding="0"
-        cellspacing="0"
-        class="tr-caption-container"
-        style="clear: left; float: right; margin-bottom: 1em; margin-left: 1em; text-align: right;"
-      >
-        <tbody>
-          <tr>
-            <td style="text-align: center;">
-              <a
-                href="https://3.bp.blogspot.com/-HPXVUgCn2jE/XJ6tn6ZGyEI/AAAAAAAABBU/wy_g6i657qACJyQstkJg4k6QOLmFGHjyQCLcBGAs/s1600/116.JPG"
-                imageanchor="1"
-                style="clear: left; display: inline !important; margin-bottom: 1em; margin-left: auto; margin-right: auto; text-align: center;"
-                ><img
-                  alt="Palace in Rajasthan "
-                  border="0"
-                  data-original-height="1200"
-                  data-original-width="1600"
-                  height="240"
-                  src="https://3.bp.blogspot.com/-HPXVUgCn2jE/XJ6tn6ZGyEI/AAAAAAAABBU/wy_g6i657qACJyQstkJg4k6QOLmFGHjyQCLcBGAs/s320/116.JPG"
-                  title="Palace in Rajasthan "
-                  width="320"
-              /></a>
-            </td>
-          </tr>
-          <tr>
-            <td class="tr-caption" style="text-align: center;">
-              Sheesh Mahal, Palace in Rajasthan&nbsp;
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      Hritik Roshan, one of the most famous (and famously handsome) Hindu actors
-      in Bollywood was chosen to the play the role of Akbar, romantic Muslim
-      hero who isnt a terrorist. Given that the Hindu-right loves to use the
-      fear of the sexuality of Muslim men as a dog whistle (much like fears of
-      the sexuality of men of color is used as a dog whistle in the U.S.), the
-      casting choice was either brave of Roshan or cynical on the part of the
-      filmmaker, who got to have it both ways. He's a hero but also really
-      Hindu, its fine!<br />
-      <br />
-      Roshan's casting as Akbar was excellent, regardless of motivation. His
-      Urdu deserves special praise. His accent is delicious. The locations,
-      costumes, and music are sumptuous proof that if money cant buy happiness,
-      it can sure buy a whole lot else.&nbsp;<a
-        href="https://www.tanishq.co.in/rivaah/brides/rajasthani"
-        >Tanishq</a
-      >&nbsp;provided the jewelry for the film, which likely cost a king's
-      ransom all on its own. The music, by A.R. Rehman, again draws on the
-      variety of musical styles on the Subcontinent for inspiration, including
-      dervishes and Hindu religious music, as well as the more contemporary
-      "Jashn-e-Bahara".<br />
-      <br />
-      <div class="embed-container">
-        <iframe
-          allowfullscreen=""
-          frameborder="0"
-          mozallowfullscreen=""
-          src="https://www.youtube.com/embed/G_E8euJ1sEg?feature=player_embedded"
-          webkitallowfullscreen=""
-        ></iframe>
-      </div>
-      <br />
-      Speaking of delicious,&nbsp;<i>Jodhaa Akbar</i>&nbsp;also caters to the
-      female gaze in a way that continues to be&nbsp;<a
-        href="https://feminisminindia.com/2017/11/07/bollywood-female-gaze/"
-        >highly unusual</a
-      >, as no one seems to have learned the lesson of "<a
-        href="https://www.youtube.com/watch?v=3XtUEgQLI5Y"
-        >Jab Se Tere Naina</a
-      >". Hritik Roshan playing with his sword is another wonderfully
-      understated metaphor, but it is also proof that this film knows its
-      audience. The full scene is&nbsp;<a
-        href="https://www.youtube.com/watch?time_continue=26&amp;v=yQLcGZAAPmw"
-        >here</a
-      >.<br />
-      <br />
-      <iframe
-        allowfullscreen=""
-        class="giphy-embed"
-        frameborder="0"
-        height="354.66"
-        src="https://giphy.com/embed/cJec4zGIr4v60"
-        width="560"
-      ></iframe
-      ><br />
-      <br />
-      <div class="" style="clear: both;">
-        <table
-          cellpadding="0"
-          cellspacing="0"
-          class="tr-caption-container"
-          style="float: right; margin-left: 1em; text-align: right;"
-        >
-          <tbody>
-            <tr>
-              <td>
-                <a
-                  href="https://3.bp.blogspot.com/-hqHWydnYdjg/XJ66ClYgbRI/AAAAAAAABCE/choN7ggIa0Im6j4m3us387L94hnFC_HBQCLcBGAs/s1600/jodhaa.png"
-                  imageanchor="1"
-                  style="margin-left: auto; margin-right: auto;"
-                  ><img
-                    border="0"
-                    data-original-height="900"
-                    data-original-width="1600"
-                    height="180"
-                    src="https://3.bp.blogspot.com/-hqHWydnYdjg/XJ66ClYgbRI/AAAAAAAABCE/choN7ggIa0Im6j4m3us387L94hnFC_HBQCLcBGAs/s320/jodhaa.png"
-                    width="320"
-                /></a>
-              </td>
-            </tr>
-            <tr>
-              <td
-                class="tr-caption"
-                style="font-size: 12.8px; text-align: center;"
+              <tbody>
+                <tr>
+                  <td style="text-align: center;">
+                    <a
+                      href="https://3.bp.blogspot.com/-HPXVUgCn2jE/XJ6tn6ZGyEI/AAAAAAAABBU/wy_g6i657qACJyQstkJg4k6QOLmFGHjyQCLcBGAs/s1600/116.JPG"
+                      imageanchor="1"
+                      style="clear: left; display: inline !important; margin-bottom: 1em; margin-left: auto; margin-right: auto; text-align: center;"
+                      ><img
+                        alt="Palace in Rajasthan "
+                        border="0"
+                        data-original-height="1200"
+                        data-original-width="1600"
+                        height="240"
+                        src="https://3.bp.blogspot.com/-HPXVUgCn2jE/XJ6tn6ZGyEI/AAAAAAAABBU/wy_g6i657qACJyQstkJg4k6QOLmFGHjyQCLcBGAs/s320/116.JPG"
+                        title="Palace in Rajasthan "
+                        width="320"
+                    /></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr-caption" style="text-align: center;">
+                    Sheesh Mahal, Palace in Rajasthan&nbsp;
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            Hritik Roshan, one of the most famous (and famously handsome) Hindu
+            actors in Bollywood was chosen to the play the role of Akbar,
+            romantic Muslim hero who isnt a terrorist. Given that the
+            Hindu-right loves to use the fear of the sexuality of Muslim men as
+            a dog whistle (much like fears of the sexuality of men of color is
+            used as a dog whistle in the U.S.), the casting choice was either
+            brave of Roshan or cynical on the part of the filmmaker, who got to
+            have it both ways. He's a hero but also really Hindu, its fine!<br />
+            <br />
+            Roshan's casting as Akbar was excellent, regardless of motivation.
+            His Urdu deserves special praise. His accent is delicious. The
+            locations, costumes, and music are sumptuous proof that if money
+            cant buy happiness, it can sure buy a whole lot else.&nbsp;<a
+              href="https://www.tanishq.co.in/rivaah/brides/rajasthani"
+              >Tanishq</a
+            >&nbsp;provided the jewelry for the film, which likely cost a king's
+            ransom all on its own. The music, by A.R. Rehman, again draws on the
+            variety of musical styles on the Subcontinent for inspiration,
+            including dervishes and Hindu religious music, as well as the more
+            contemporary "Jashn-e-Bahara".<br />
+            <br />
+            <div class="embed-container">
+              <iframe
+                allowfullscreen=""
+                frameborder="0"
+                mozallowfullscreen=""
+                src="https://www.youtube.com/embed/G_E8euJ1sEg?feature=player_embedded"
+                webkitallowfullscreen=""
+              ></iframe>
+            </div>
+            <br />
+            Speaking of delicious,&nbsp;<i>Jodhaa Akbar</i>&nbsp;also caters to
+            the female gaze in a way that continues to be&nbsp;<a
+              href="https://feminisminindia.com/2017/11/07/bollywood-female-gaze/"
+              >highly unusual</a
+            >, as no one seems to have learned the lesson of "<a
+              href="https://www.youtube.com/watch?v=3XtUEgQLI5Y"
+              >Jab Se Tere Naina</a
+            >". Hritik Roshan playing with his sword is another wonderfully
+            understated metaphor, but it is also proof that this film knows its
+            audience. The full scene is&nbsp;<a
+              href="https://www.youtube.com/watch?time_continue=26&amp;v=yQLcGZAAPmw"
+              >here</a
+            >.<br />
+            <br />
+            <iframe
+              allowfullscreen=""
+              class="giphy-embed"
+              frameborder="0"
+              height="354.66"
+              src="https://giphy.com/embed/cJec4zGIr4v60"
+              width="560"
+            ></iframe
+            ><br />
+            <br />
+            <div class="" style="clear: both;">
+              <table
+                cellpadding="0"
+                cellspacing="0"
+                class="tr-caption-container"
+                style="float: right; margin-left: 1em; text-align: right;"
               >
-                Same, bitch.
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        The film lasts more than 3 hours, so I wont try to describe the plot. It
-        is an epic film, so there is a lot of plot. It is loosely based on
-        history, punctuated by some things that actually happened in a way that
-        may have vaguely resembled the way they happened on screen. This film is
-        about myth-making, and if the myth in question takes religious tolerance
-        (albeit limited to Hindu/Muslim tolerance) as its jumping off point,
-        that isn't the worst thing. Khuda knows there are far more dangerous
-        myths. The disappointment comes from the fact that if the film was going
-        to be mostly fiction anyway, it could have done a lot more.<br />
-        <br />
-        Particularly since there were protests against the film throughout North
-        India anyway. These were ostensibly about historical inaccuracy but
-        unsecretly about the fact that the&nbsp;<a
-          href="https://sahoo.wordpress.com/2008/03/05/history-and-community-honor-protests-against-film-jodha-akbar/"
-          >Rajput and Hindu right are Islamophobic</a
-        >- even thought the film isn't exactly groundbreaking in its political
-        message. Some of these same groups were&nbsp;<a
-          href="https://indianexpress.com/article/beyond-the-news/how-is-karni-sena-the-group-behind-padmavati-protests-so-powerful-4948391/"
-          >back at it last year</a
-        >&nbsp;protesting the release of historical epic&nbsp;<i
-          ><a href="https://www.imdb.com/title/tt5935704/?ref_=fn_al_tt_1"
-            >Padmaavat</a
-          >&nbsp;</i
-        >(2018).<br />
-        <br />
-        Now, are Jodhaa and Akbar in the running for "<a
-          href="https://www.youtube.com/watch?v=zZe8yU23cTc"
-          >most awkward "first time" musical number</a
-        >"? Yes- and in Bollywood the competition is tragic. Is there some
-        over-acting? Yes. Was Ashwaria Rai underutilized? Yes. Did the film need
-        to include Akbar taming a wild elephant? Debatable-
-        <a href="https://art.thewalters.org/detail/35955">even if it is true</a
-        >. Its not like they needed to fill time. Is the film as good as
-        <i>Mughal-e-Azim</i>? Surely you jest.<br />
-        <br />
-      </div>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a
+                        href="https://3.bp.blogspot.com/-hqHWydnYdjg/XJ66ClYgbRI/AAAAAAAABCE/choN7ggIa0Im6j4m3us387L94hnFC_HBQCLcBGAs/s1600/jodhaa.png"
+                        imageanchor="1"
+                        style="margin-left: auto; margin-right: auto;"
+                        ><img
+                          border="0"
+                          data-original-height="900"
+                          data-original-width="1600"
+                          height="180"
+                          src="https://3.bp.blogspot.com/-hqHWydnYdjg/XJ66ClYgbRI/AAAAAAAABCE/choN7ggIa0Im6j4m3us387L94hnFC_HBQCLcBGAs/s320/jodhaa.png"
+                          width="320"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="tr-caption"
+                      style="font-size: 12.8px; text-align: center;"
+                    >
+                      Same, bitch.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              The film lasts more than 3 hours, so I wont try to describe the
+              plot. It is an epic film, so there is a lot of plot. It is loosely
+              based on history, punctuated by some things that actually happened
+              in a way that may have vaguely resembled the way they happened on
+              screen. This film is about myth-making, and if the myth in
+              question takes religious tolerance (albeit limited to Hindu/Muslim
+              tolerance) as its jumping off point, that isn't the worst thing.
+              Khuda knows there are far more dangerous myths. The disappointment
+              comes from the fact that if the film was going to be mostly
+              fiction anyway, it could have done a lot more.<br />
+              <br />
+              Particularly since there were protests against the film throughout
+              North India anyway. These were ostensibly about historical
+              inaccuracy but unsecretly about the fact that the&nbsp;<a
+                href="https://sahoo.wordpress.com/2008/03/05/history-and-community-honor-protests-against-film-jodha-akbar/"
+                >Rajput and Hindu right are Islamophobic</a
+              >- even thought the film isn't exactly groundbreaking in its
+              political message. Some of these same groups were&nbsp;<a
+                href="https://indianexpress.com/article/beyond-the-news/how-is-karni-sena-the-group-behind-padmavati-protests-so-powerful-4948391/"
+                >back at it last year</a
+              >&nbsp;protesting the release of historical epic&nbsp;<i
+                ><a href="https://www.imdb.com/title/tt5935704/?ref_=fn_al_tt_1"
+                  >Padmaavat</a
+                >&nbsp;</i
+              >(2018).<br />
+              <br />
+              Now, are Jodhaa and Akbar in the running for "<a
+                href="https://www.youtube.com/watch?v=zZe8yU23cTc"
+                >most awkward "first time" musical number</a
+              >"? Yes- and in Bollywood the competition is tragic. Is there some
+              over-acting? Yes. Was Ashwaria Rai underutilized? Yes. Did the
+              film need to include Akbar taming a wild elephant? Debatable-
+              <a href="https://art.thewalters.org/detail/35955"
+                >even if it is true</a
+              >. Its not like they needed to fill time. Is the film as good as
+              <i>Mughal-e-Azim</i>? Surely you jest.<br />
+              <br />
+            </div>
+          </div>
+          <div style="text-align: left;">
+            <div
+              class="separator"
+              style="clear: both; text-align: center;"
+            ></div>
+            <div class="embed-container">
+              <iframe
+                allowfullscreen=""
+                frameborder="0"
+                mozallowfullscreen=""
+                src="https://www.youtube.com/embed/FhzhJTkpAjo?feature=player_embedded"
+                webkitallowfullscreen=""
+              ></iframe>
+            </div>
+            <br />
+            <div style="text-align: left;">
+              A surprisingly lovely collection of Mughal miniatures, including
+              one featuring Akbar and some elephants, can be viewed for free at
+              the&nbsp;<a href="https://art.thewalters.org/browse/place/india/"
+                >Walters Art Museum</a
+              >&nbsp;in Baltimore!&nbsp;&nbsp;
+            </div>
+          </div>
+          <div class="separator" style="clear: both; text-align: left;">
+            <br />
+          </div>
+          <div>
+            Film:
+            <a href="https://www.imdb.com/title/tt0449994/?ref_=fn_al_tt_1"
+              ><i>Jodhaa Akbar</i> </a
+            >(2008)</div><div>
+              <div> Director: Ashutosh Gowariker</div>
+            <div> K. P. Saxena, Haidar Ali, Ashutosh Gowariker</div>
+            <div>Runtime: 214 minutes</div>
+            <div>Language: Hindi, Urdu</div>
+            <div>  Country: India</div>
     </div>
-    <div style="text-align: left;">
-      <div class="separator" style="clear: both; text-align: center;"></div>
-      <div class="embed-container">
-        <iframe
-          allowfullscreen=""
-          frameborder="0"
-          mozallowfullscreen=""
-          src="https://www.youtube.com/embed/FhzhJTkpAjo?feature=player_embedded"
-          webkitallowfullscreen=""
-        ></iframe>
-      </div>
-      <br />
-      <div style="text-align: left;">
-        A surprisingly lovely collection of Mughal miniatures, including one
-        featuring Akbar and some elephants, can be viewed for free at
-        the&nbsp;<a href="https://art.thewalters.org/browse/place/india/"
-          >Walters Art Museum</a
-        >&nbsp;in Baltimore!&nbsp;&nbsp;
-      </div>
-    </div>
-    <div class="separator" style="clear: both; text-align: left;">
-      <br />
-    </div>
-    <div class="" style="clear: both; text-align: left;">
-      Film:
-      <a href="https://www.imdb.com/title/tt0449994/?ref_=fn_al_tt_1"
-        ><i>Jodhaa Akbar</i> </a
-      >(2008)<br />
-      Director: Ashutosh Gowariker<br />
-      Writers: K. P. Saxena, Haidar Ali, Ashutosh Gowariker<br />
-      Runtime: 214 minutes<br />
-      Language: Hindi, Urdu<br />
-      Country: India
-      <body>
-        <style>
-          #myImg {
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
-          }
-
-          #myImg:hover {
-            opacity: 0.7;
-          }
-
-          /* The Modal (background) */
-          .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            padding-top: 100px; /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0, 0, 0); /* Fallback color */
-            background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
-          }
-
-          /* Modal Content (image) */
-          .modal-content {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-          }
-
-          /* Caption of Modal Image */
-          #caption {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-            text-align: center;
-            color: #ccc;
-            padding: 10px 0;
-            height: 150px;
-          }
-
-          /* Add Animation */
-          .modal-content,
-          #caption {
-            -webkit-animation-name: zoom;
-            -webkit-animation-duration: 0.6s;
-            animation-name: zoom;
-            animation-duration: 0.6s;
-          }
-
-          @-webkit-keyframes zoom {
-            from {
-              -webkit-transform: scale(0);
-            }
-            to {
-              -webkit-transform: scale(1);
-            }
-          }
-
-          @keyframes zoom {
-            from {
-              transform: scale(0);
-            }
-            to {
-              transform: scale(1);
-            }
-          }
-
-          /* The Close Button */
-          .close {
-            position: absolute;
-            top: 15px;
-            right: 35px;
-            color: #f1f1f1;
-            font-size: 40px;
-            font-weight: bold;
-            transition: 0.3s;
-          }
-
-          .close:hover,
-          .close:focus {
-            color: #bbb;
-            text-decoration: none;
-            cursor: pointer;
-          }
-
-          /* 100% Image Width on Smaller Screens */
-          @media only screen and (max-width: 700px) {
-            .modal-content {
-              width: 100%;
-            }
-          }
-        </style>
-      </body>
-      <body>
-        <!-- The Modal -->
-        <div class="modal" id="myModal">
-          <span class="close">×</span>
-          <img class="modal-content" id="img01" />
-          <div id="caption"></div>
-        </div>
-        <script>
-          // Get the modal
-          var modal = document.getElementById('myModal')
-
-          // Get the image and insert it inside the modal - use its "alt" text as a caption
-          var img = document.getElementById('myImg1')
-          var modalImg = document.getElementById('img01')
-          var captionText = document.getElementById('caption')
-          img.onclick = function () {
-            modal.style.display = 'block'
-            modalImg.src = this.src
-            captionText.innerHTML = this.alt
-          }
-
-          // Get the <span> element that closes the modal
-          var span = document.getElementsByClassName('close')[0]
-
-          // When the user clicks on <span> (x), close the modal
-          span.onclick = function () {
-            modal.style.display = 'none'
-          }
-        </script>
-        <script>
-          var allowedKeys = {
-            37: 'left',
-            38: 'up',
-            39: 'right',
-            40: 'down',
-            65: 'a',
-            66: 'b'
-          }
-
-          // the 'official' Konami Code sequence
-          var konamiCode = [
-            'up',
-            'up',
-            'down',
-            'down',
-            'left',
-            'right',
-            'left',
-            'right',
-            'b',
-            'a'
-          ]
-
-          // a variable to remember the 'position' the user has reached so far.
-          var konamiCodePosition = 0
-
-          // add keydown event listener
-          document.addEventListener('keydown', function (e) {
-            // get the value of the key code from the key map
-            var key = allowedKeys[e.keyCode]
-            // get the value of the required key from the konami code
-            var requiredKey = konamiCode[konamiCodePosition]
-
-            // compare the key with the required key
-            if (key == requiredKey) {
-              // move to the next key in the konami code sequence
-              konamiCodePosition++
-
-              // if the last key is reached, activate cheats
-              if (konamiCodePosition == konamiCode.length) {
-                activateCheats()
-                konamiCodePosition = 0
-              }
-            } else {
-              konamiCodePosition = 0
-            }
-          })
-
-          function activateCheats () {
-            var riddler = window.open(
-              'https://1.bp.blogspot.com/-umQrN2eEM-I/XIO2YtqqfsI/AAAAAAAAA-s/Xl3Vt12ZjwER5q0LVarRV4m7Hzzh2IOpQCLcBGAs/s640/Mughal-e-Azim%2Bfor%2Bkonami.gif'
-            )
-          }
-        </script>
-      </body>
-    </div>
-  </div>
-</div>
+  </body>
+</html>
