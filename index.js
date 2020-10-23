@@ -1,24 +1,3 @@
-// Get the modal
-var modal = document.getElementById('myModal')
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg1')
-var modalImg = document.getElementById('img01')
-var captionText = document.getElementById('caption')
-img.onclick = function () {
-  modal.style.display = 'block'
-  modalImg.src = this.src
-  captionText.innerHTML = this.alt
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName('close')[0]
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  modal.style.display = 'none'
-}
-
 var allowedKeys = {
   37: 'left',
   38: 'up',
@@ -44,6 +23,54 @@ var konamiCode = [
 
 // a variable to remember the 'position' the user has reached so far.
 var konamiCodePosition = 0
+var img
+var modalImg = document.getElementById('img01')
+var captionText = document.getElementById('caption')
+var modal = document.getElementById('myModal')
+
+function checkForModalImages () {
+  var imageList = document.querySelectorAll('img')
+  if (imageList.length > 0) addIdToImage(imageList)
+}
+
+function addIdToImage (imageList) {
+  for (let i = 1; i < imageList.length; i++) {
+    img = imageList[i]
+    img.id = `${'myImg' + i}`
+    addClick(img)
+    // console.log(img)
+  }
+  // console.log(img)
+}
+// Get the modal
+
+function addClick (img) {
+  if (typeof img === 'undefined') return
+  console.log(img)
+  img.onclick = function () {
+    modal.style.display = 'block'
+    modalImg.src = this.src
+    captionText.innerHTML = this.alt
+  }
+}
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+//var img = document.getElementById('myImg1')
+// var modalImg = document.getElementById('img01')
+// var captionText = document.getElementById('caption')
+// img.onclick = function () {
+//   modal.style.display = 'block'
+//   modalImg.src = this.src
+//   captionText.innerHTML = this.alt
+// }
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName('close')[0]
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = 'none'
+}
 
 // add keydown event listener
 document.addEventListener('keydown', function (e) {
@@ -73,3 +100,4 @@ function activateCheats () {
     'https://1.bp.blogspot.com/-umQrN2eEM-I/XIO2YtqqfsI/AAAAAAAAA-s/Xl3Vt12ZjwER5q0LVarRV4m7Hzzh2IOpQCLcBGAs/s640/Mughal-e-Azim%2Bfor%2Bkonami.gif'
   )
 }
+checkForModalImages()
