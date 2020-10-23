@@ -38,11 +38,8 @@ function addIdToImage (imageList) {
     img = imageList[i]
     img.id = `${'myImg' + i}`
     addClick(img)
-    // console.log(img)
   }
-  // console.log(img)
 }
-// Get the modal
 
 function addClick (img) {
   if (typeof img === 'undefined') return
@@ -53,17 +50,6 @@ function addClick (img) {
     captionText.innerHTML = this.alt
   }
 }
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-//var img = document.getElementById('myImg1')
-// var modalImg = document.getElementById('img01')
-// var captionText = document.getElementById('caption')
-// img.onclick = function () {
-//   modal.style.display = 'block'
-//   modalImg.src = this.src
-//   captionText.innerHTML = this.alt
-// }
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName('close')[0]
 
@@ -74,7 +60,6 @@ span.onclick = function () {
 
 // add keydown event listener
 document.addEventListener('keydown', function (e) {
-  console.log('konami?')
   // get the value of the key code from the key map
   var key = allowedKeys[e.keyCode]
   // get the value of the required key from the konami code
