@@ -27,6 +27,7 @@ var img
 var modalImg = document.getElementById('img01')
 var captionText = document.getElementById('caption')
 var modal = document.getElementById('myModal')
+var span = document.getElementsByClassName('close')[0]
 
 function checkForModalImages () {
   var imageList = document.querySelectorAll('img')
@@ -50,8 +51,6 @@ function addClick (img) {
     captionText.innerHTML = this.alt
   }
 }
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName('close')[0]
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
@@ -81,8 +80,12 @@ document.addEventListener('keydown', function (e) {
 })
 
 function activateCheats () {
-  var riddler = window.open(
+  window.open(
     'https://1.bp.blogspot.com/-umQrN2eEM-I/XIO2YtqqfsI/AAAAAAAAA-s/Xl3Vt12ZjwER5q0LVarRV4m7Hzzh2IOpQCLcBGAs/s640/Mughal-e-Azim%2Bfor%2Bkonami.gif'
   )
 }
+
+function createHeader () {}
+
 checkForModalImages()
+createHeader()
