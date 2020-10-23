@@ -27,6 +27,7 @@ var img
 var modalImg = document.getElementById('img01')
 var captionText = document.getElementById('caption')
 var modal = document.getElementById('myModal')
+var span = document.getElementsByClassName('close')[0]
 
 function checkForModalImages () {
   var imageList = document.querySelectorAll('img')
@@ -38,11 +39,8 @@ function addIdToImage (imageList) {
     img = imageList[i]
     img.id = `${'myImg' + i}`
     addClick(img)
-    // console.log(img)
   }
-  // console.log(img)
 }
-// Get the modal
 
 function addClick (img) {
   if (typeof img === 'undefined') return
@@ -54,19 +52,6 @@ function addClick (img) {
   }
 }
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-//var img = document.getElementById('myImg1')
-// var modalImg = document.getElementById('img01')
-// var captionText = document.getElementById('caption')
-// img.onclick = function () {
-//   modal.style.display = 'block'
-//   modalImg.src = this.src
-//   captionText.innerHTML = this.alt
-// }
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName('close')[0]
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
   modal.style.display = 'none'
@@ -74,7 +59,6 @@ span.onclick = function () {
 
 // add keydown event listener
 document.addEventListener('keydown', function (e) {
-  console.log('konami?')
   // get the value of the key code from the key map
   var key = allowedKeys[e.keyCode]
   // get the value of the required key from the konami code
@@ -96,8 +80,12 @@ document.addEventListener('keydown', function (e) {
 })
 
 function activateCheats () {
-  var riddler = window.open(
+  window.open(
     'https://1.bp.blogspot.com/-umQrN2eEM-I/XIO2YtqqfsI/AAAAAAAAA-s/Xl3Vt12ZjwER5q0LVarRV4m7Hzzh2IOpQCLcBGAs/s640/Mughal-e-Azim%2Bfor%2Bkonami.gif'
   )
 }
+
+function createHeader () {}
+
 checkForModalImages()
+createHeader()
