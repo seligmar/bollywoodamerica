@@ -28,6 +28,8 @@ var modalImg = document.getElementById('img01')
 var captionText = document.getElementById('caption')
 var modal = document.getElementById('myModal')
 var span = document.getElementsByClassName('close')[0]
+var screenWidth = window.innerWidth * 0.75
+var screenHeight = window.innerHTML * 0.75
 
 function checkForModalImages () {
   var imageList = document.querySelectorAll('img')
@@ -44,17 +46,31 @@ function addIdToImage (imageList) {
 
 function addClick (img) {
   if (typeof img === 'undefined') return
-  console.log(img)
+  var height = img.height
+  var width = img.width
   img.onclick = function () {
     modal.style.display = 'block'
+    // img.style.height = 90
     modalImg.src = this.src
     captionText.innerHTML = this.alt
+    resizeImg(height, width)
   }
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
   modal.style.display = 'none'
+}
+
+function resizeImg (height, width) {
+  var modalContent = document.querySelector('.modal-content')
+  modalContent.style.height = height * 1.5 + 'px'
+  modalContent.style.width = width * 1.5 + 'px'
+  //console.log(height)
+
+  //  style.width = width * 2
+  //  console.log(style)
+  // img.height =  screenHeight *
 }
 
 // add keydown event listener
