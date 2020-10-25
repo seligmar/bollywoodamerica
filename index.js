@@ -50,7 +50,6 @@ function addClick (img) {
   var width = img.width
   img.onclick = function () {
     modal.style.display = 'block'
-    // img.style.height = 90
     modalImg.src = this.src
     captionText.innerHTML = this.alt
     resizeImg(height, width)
@@ -64,13 +63,10 @@ span.onclick = function () {
 
 function resizeImg (height, width) {
   var modalContent = document.querySelector('.modal-content')
+  //if (height === 0) modalContent.style.height = screenHeight * 0.75 + 'px'
+  //if (width === 0) modalContent.style.width = screenWidth * 0.75 + 'px'
   modalContent.style.height = height * 1.5 + 'px'
   modalContent.style.width = width * 1.5 + 'px'
-  //console.log(height)
-
-  //  style.width = width * 2
-  //  console.log(style)
-  // img.height =  screenHeight *
 }
 
 // add keydown event listener
