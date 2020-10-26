@@ -1,3 +1,14 @@
+// var script = document.createElement('script')
+// script.src = 'https:code.jquery.com/jquery-3.4.1.min.js'
+// script.type = 'text/javascript'
+// document.getElementsByTagName('head')[0].appendChild(script)
+// //
+//var $ = $
+
+$(document).ready(function () {
+  checkForModalImages()
+})
+
 var allowedKeys = {
   37: 'left',
   38: 'up',
@@ -99,5 +110,5 @@ function activateCheats () {
 
 function createHeader () {}
 
-checkForModalImages()
-createHeader()
+// checkForModalImages()
+// createHeader()
