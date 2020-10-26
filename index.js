@@ -7,6 +7,7 @@
 
 $(document).ready(function () {
   checkForModalImages()
+  checkForLinks()
 })
 
 var allowedKeys = {
@@ -108,7 +109,15 @@ function activateCheats () {
   )
 }
 
-function createHeader () {}
+function checkForLinks () {
+  var allLinks = document.querySelectorAll('a')
+  if (allLinks.length > 0) addLinks(allLinks)
+}
+
+function addLinks (links) {
+  links.forEach(link => link.setAttribute('target', '_blank'))
+}
+//function createHeader () {}
 
 // checkForModalImages()
 // createHeader()
