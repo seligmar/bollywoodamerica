@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bollywood America</title>
+    <link
+      rel="icon"
+      href="
+  data:image/png;base64,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"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/Users/maryselig/Documents/bollywoodamerica/index.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="/Users/maryselig/Documents/bollywoodamerica/index.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="home">
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <span class="close">×</span>
+        <img class="modal-content" id="img01" />
+        <div id="caption"></div>
+      </div>
+      <div>
+        I was inspired to write this post by a joke to a friend that, "I live as
+        much of my life like a Bollywood film as possible!" Largely because I
+        forget I am singling out loud and catch myself mid "aankhon main teri"
+        in public; it occurred to me that a post would be a fun opportunity to
+        point to some of the fantastic and life-enhancing accessories available
+        to fans of Indian cinema.
+      </div>
+
+      <br />
+      <div class="embed-container">
+        <iframe
+          allowfullscreen=""
+          frameborder="0"
+          mozallowfullscreen=""
+          src="https://www.youtube.com/embed/70QpN7DvaK4?feature=player_embedded"
+          webkitallowfullscreen=""
+        ></iframe
+        ><br />
+        <br />
+      </div>
+      <div style="text-align: left;">
+        I am also tired of running across websites recommending ways to throw an
+        "Indian party". As far as I can tell, the secret is to buy some
+        bright-colored fabric and create an indoor orientalist -inspired harem a
+        la
+        <a
+          href="http://upload.wikimedia.org/wikipedia/commons/2/2f/Delacroix_-_La_Mort_de_Sardanapale_(1827).jpg"
+          >Eugène Delacroix</a
+        >. There is a weird-smelling store in nearly every town offering
+        questionably-sourced imports allowing people everything they need to
+        create an orientalist harem in their own home.
+        <a
+          href="http://www.vogue.com/3622307/bohemian-decorating-interiors/?mbid=nl_110514_Daily&amp;CNDID=29156881&amp;spMailingID=11391245&amp;spUserID=NjkyNzYwMTE1MzgS1&amp;spJobID=383244218&amp;spReportId=MzgzMjQ0MjE4S0"
+          >Even <i>Vogue</i> got in on the act</a
+        >. But it is well past time to move beyond patchouli.
+      </div>
+      <br />
+      <u>The Art</u><br />
+
+      <div style="text-align: left;">
+        Until fairly recently, movie posters in India were hand-painted works of
+        art. Thanks to the dedication of a few individuals and the magic of the
+        internet, these pop-art masterpieces are now available to the discerning
+        public. For original art, they are a complete steal at $30-$300;
+        <a
+          href="http://www.architecturaldigest.com/shop/2014-07/auction-house-sales-slideshow_slideshow_liz--1964--by-andy-warhol_3"
+          >a Warhol poster of Liz Taylor recently sold for $92,000</a
+        >. You can buy a poster of
+        <a
+          href="http://www.ebay.com/itm/RARE-Hamrahi-1963-old-vintage-hand-drawn-Bollywood-movie-poster-from-India-ORG-/321523736879?pt=LH_DefaultDomain_0&amp;hash=item4adc4ee12f"
+          >Rajendra Kumar and Jamuna for a mere $50.</a
+        >&nbsp;<a
+          href="https://www.youtube.com/watch?v=oZIqo0S-ANs"
+          style="text-align: center;"
+          >CNN did a fascinating report about the work being done by the owners
+          of Indian Hippy to preserve hand-drawn posters.</a
+        ><span style="text-align: center;"
+          >&nbsp;It is well worth watching. You can even have yourself painted
+          into your favorite film!&nbsp;</span
+        >
+      </div>
+      <div style="text-align: left;">
+        <br />
+        <div class="embed-container">
+          <iframe
+            allowfullscreen=""
+            frameborder="0"
+            mozallowfullscreen=""
+            src="https://www.youtube.com/embed/oZIqo0S-ANs?feature=player_embedded"
+            webkitallowfullscreen=""
+          ></iframe
+          ><br />
+          <br />
+        </div>
+        There is obviously more to the South Asian art scene than Bollywood;
+        India is home to a buzzing contemporary art scene, as highlighted in
+        Khan's cinematic&nbsp;<i
+          ><a
+            href="http://bollywoodamerica.blogspot.com/2014/12/dhobi-ghat-mumbai-diaries.html"
+            >Dhobi Ghat</a
+          ></i
+        >
+        (2010). The Guggenheim in NY recently hosted&nbsp;<a
+          href="http://www.guggenheim.org/new-york/exhibitions/upcoming/v-s-gaitonde-painting-as-process-painting-as-life"
+          >a retrospective of V.S. Gaitonde's work</a
+        >.&nbsp;Similarly, the&nbsp;<a
+          href="http://www.vam.ac.uk/content/exhibitions/mfhusain//"
+          >V &amp; A recently hosted a special exhibition of M.F. Husain's final
+          nine paintings</a
+        >.&nbsp;Vogue India recently conducted a<a
+          href="http://www.vogue.in/content/sandhini-poddar-vs-gaitonde"
+          >&nbsp;interview with the show's currator Sandhini Poddar</a
+        >, which provides a good entrance-point to learning more about some of
+        India contemporary and modern artists.
+      </div>
+      <div style="text-align: left;">
+        <br />
+      </div>
+      <div style="text-align: left;">
+        <a href="http://emergingartists.in/">Emergingartists.in</a>&nbsp;is just
+        one of the websites I found featuring some of the artists now working in
+        India, who are creating works ranging from traditional to
+        traditionally-informed transnational.&nbsp;I am myself eyeing up
+        <a
+          href="http://www.emergingartists.in/artist_display.php?ArtistId=423&amp;Cat=Paintings#.U0lB9vldVrk"
+          >Surabhi Tandon Khanna's work</a
+        >. Disclaimer: I have not purchased art from any of these sources. But I
+        have dreams. &nbsp; &nbsp;
+      </div>
+      <div style="text-align: left;">
+        <br />
+      </div>
+      <div style="text-align: left;">
+        <u>The Jewelry</u>
+      </div>
+      <br />
+      <table
+        cellpadding="0"
+        cellspacing="0"
+        class="tr-caption-container"
+        style="float: left; text-align: left;"
+      >
+        <tbody>
+          <tr>
+            <td style="text-align: center;">
+              <imageanchor
+                style="clear: right; margin-bottom: 1em; margin-left: auto; margin-right: auto;"
+                ><img
+                  alt="A High Class Bangles Place"
+                  border="0"
+                  height="420"
+                  id="myImg1"
+                  img=""
+                  src="https://4.bp.blogspot.com/-AiDpSIpJVI8/VDAAVLbKWiI/AAAAAAAAATE/e9PCAC7OhnE/s640/004.JPG"
+                  title="A High Class Bangles Place"
+                  width="560"
+              /></imageanchor>
+            </td>
+          </tr>
+          <tr>
+            <td class="tr-caption" style="text-align: center;">
+              A High Class Bangles Place
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      Fair-trade stores are also all over the place online. The
+      <a href="http://www.tenthousandvillages.com/">10,000 Villages website</a
+      >&nbsp;features a lot of lovely fair-trade sourced jewelry from South
+      Asia.&nbsp;If you are feeling flush, Vogue India featured the jewelry
+      appearing in
+      <a
+        href="http://www.vogue.in/content/top-indian-jewellers-project-blossoming"
+        >Project Blossoming</a
+      >, the proceeds of which will support&nbsp;<a
+        href="http://www.nanhikali.org/"
+        >Project Nanhi Kali</a
+      >, an organization seeking to promote educational opportunities for girl
+      children in India.&nbsp;If you are not feeling flush, you can still enjoy
+      looking at the pretty things, watch the video, and learn more about women
+      helping women in India.<br />
+      <br />
+      Bangles, glass or metal, bring jingle-jangle music to any outfit, and I
+      carefully coordinated them with my outfits in India in a doomed attempt to
+      bring order from chaos.
+      <a href="https://www.youtube.com/watch?v=m_x68snIKak"
+        >Glass bangles are often made by children</a
+      >&nbsp;so be careful and aware about where you buy them.&nbsp;&nbsp;
+
+      <br />
+      <div style="text-align: justify;">
+        <br />
+      </div>
+      <div style="text-align: center;">
+        <div style="text-align: left;">
+          <u>The <i>Mhendi</i></u>
+        </div>
+        <div style="text-align: left;">
+          <i><br /></i>
+        </div>
+        <div style="text-align: left;">
+          <table
+            cellpadding="0"
+            cellspacing="0"
+            class="tr-caption-container"
+            style="margin-left: auto; margin-right: auto; text-align: justify;"
+          >
+            <tbody>
+              <tr>
+                <td style="text-align: center;">
+                  <imageanchor
+                    style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"
+                    ><img
+                      alt="Rekha in the eponymous role, Umrao Jaan (1981)"
+                      border="0"
+                      height="315"
+                      src="https://1.bp.blogspot.com/-n6YAKJe294U/VXLDT6qneKI/AAAAAAAAAYg/m_7xrktV65U/s640/umrao%2Bjaan.png"
+                      title="Rekha in the eponymous role, Umrao Jaan (1981)"
+                      width="560"
+                  /></imageanchor>
+                </td>
+              </tr>
+              <tr>
+                <td class="tr-caption" style="text-align: center;">
+                  Rekha in the eponymous role, <i>Umrao Jaan</i> (1981)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <i>Mhendi, </i>also&nbsp;called <i>henna</i>,&nbsp;is a lot of fun. It
+          is also popular with the hippy-dippy set. Whadayado. I dont know as
+          much about the history of <i>mhendi</i> as I would like, but I do know
+          that it is used throughout the Near East, North Africa, into Central
+          Asia, and in South Asia, although its use never made it as far east as
+          Bengal- perhaps <i>mhendi</i> doesnt grow there. In Lucknow at least,
+          the designs as worn in <i>Umrao Jaan</i>&nbsp;(1981) (specifically
+          colored fingertips and palms) were favored for brides; the intricate
+          patterns now famous in the west were more common in Rajasthan and
+          other parts of western South Asia. The patterns favored in other parts
+          of the world are different again. Although <i>mhendi</i> is a part of
+          many South Asian wedding ceremonies, while I was living in
+          Naukuchiatal we applied <i>mhendi</i> as a recreational activity- it
+          is a lovely way to build relationships between women, one which
+          requires time and trust. I have also heard that in some places, the
+          name of the groom is written in <i>mhendi</i> on the bride's body.
+          Certainly <i>mhendi</i>, as well as long rows of red and white
+          bangles, are a way to identify a new bride; wearing <i>mhendi </i>and
+          glass bangles to the elbow make housework more difficult (no one wants
+          to wear off their <i>mhendi </i>doing dishes), and the tradition can
+          allow a new bride some breathing room in a new household. &nbsp;
+        </div>
+      </div>
+      <br />
+      <u>The Beauty Products</u><br />
+
+      <div class="MsoNormal">
+        <div style="text-align: left;">
+          Everyone I knew while studying in Lucknow with AIIS, including myself,
+          used
+          <a href="https://www.himalayastore.com/speciality/kajal.htm"
+            >Himalaya <i>kajal</i></a
+          >&nbsp;-&nbsp;it was simply the best on the market. I wear it daily.
+          Himalaya products are available on Ebay and Amazon.<br />
+          <br />
+          I found the plethora of British products still available on the market
+          fascinating, most especially Yardley's and Ponds, from which lines you
+          could buy soaps, talcum powders, scents, and creams in every large
+          store in every city I visited. Ponds talcum powder (sandalwood) was
+          particularly lovely for the summer. Wearing talc made me feel like a
+          black-and-white picture co-starring Cary Grant; also, other deodorants
+          melted strangely in the heat. Turns out Grandma was absolutely on to
+          something.
+        </div>
+      </div>
+      <div class="MsoNormal">
+        <div style="text-align: left;">
+          <br />
+        </div>
+      </div>
+      <div class="MsoNormal">
+        <div style="text-align: left;">
+          <a href="http://i3.cdnds.net/13/30/618x790/gwen-stefani.jpg"
+            >Gwen Stephani wore bindi for a while in the 90s</a
+          >.
+          <a href="http://margaretcho.com/2005/10/31/harajuku-girls/"
+            >She also dressed Asian women like dolls</a
+          >. Dont do it. Cochella, you deeply questionable annual fashion
+          moment, I am looking at you. Note: a <i>bindi</i> is not the same as a
+          <i>tika; </i>the first is a symbol of married status and/or an
+          accessory, and the second is part of a blessing. In Naukuchiatal,
+          where Shiva was favored in the public sphere, <i>tikas</i> usually
+          included rice, turmeric, and a red powder that may or may not have
+          been <i>abir</i>. Different sects favor different styles of
+          <i>tikas</i>, but in Naukuchiatal they were applied with a thumb
+          starting between the eyes and drawing upwards, followed by a few
+          grains of uncooked rice. Why rice, I dont know, and havent been able
+          to find out. &nbsp; &nbsp; &nbsp; &nbsp;
+        </div>
+      </div>
+      <br />
+      <u>The Food!</u><br />
+
+      <div class="MsoNormal">
+        <table
+          cellpadding="0"
+          cellspacing="0"
+          class="tr-caption-container"
+          style="float: right; margin-bottom: 1em; margin-left: 1em; text-align: left;"
+        >
+          <tbody>
+            <tr>
+              <td style="text-align: center;">
+                <imageanchor style="margin-left: auto; margin-right: auto;"
+                  ><img
+                    alt="Chicken Maharaja Mac advertisement"
+                    border="0"
+                    height="200"
+                    src="https://3.bp.blogspot.com/-mAMAhQnjto0/VXLKjDLyVEI/AAAAAAAAAY4/Y_ylxMi_keA/s200/maharaja-mac.jpg"
+                    title="Chicken Maharaja Mac advertisement"
+                    width="178"
+                /></imageanchor>
+              </td>
+            </tr>
+            <tr>
+              <td class="tr-caption" style="text-align: center;">
+                the cornerstone of any nutritious breakfast
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div style="text-align: left;">
+          The internet is full of recipes for different different Indian foods.
+          I dont know much about any of them, so you will have to find the
+          websites yourself. I will, however, recommend
+          <a
+            href="http://www.amazon.com/The-Calcutta-Kitchen-Simon-Parkes/dp/1566566797/ref=sr_1_1?ie=UTF8&amp;qid=1412433196&amp;sr=8-1&amp;keywords=the+calcutta+kitchen"
+            ><i>The Calcutta Kitchen</i></a
+          >&nbsp;cookbook by Udit Sharkhel. I haven’t tried any of the recipes
+          yet (no excuses; I own the book), but the photos are beautiful, so you
+          can always pop them out of the book and hang them on the walls of your
+          kitchen.
+        </div>
+        <div style="text-align: left;">
+          <br />
+        </div>
+        <div style="text-align: left;">
+          Or eat we did at
+          <a href="http://www.aiislanguageprograms.org/lp/bangla"
+            >AIIS Kolkata</a
+          >- brew a pot of tea, add milk, and eat cucumber and tomatoe
+          sandwiches with fresh butter, and Lay’s potatoe chips on the side.
+          Throw in some McVities Digestive Biscuits and full fat yogurt, put on
+          a Satyaji Ray film, and call it a party. “Authentic” and “inauthentic”
+          foods are impossible options- something is either food or it isn’t,
+          people eat it in Indian or they don’t. And with 1.24 billion citizens,
+          someone probably does. &nbsp; &nbsp;
+        </div>
+        <div style="text-align: left;">
+          <br />
+        </div>
+        <div style="text-align: left;">
+          <u>The Drinks!</u>
+        </div>
+      </div>
+      <div class="MsoNormal">
+        <div style="text-align: left;">
+          <u><br /></u>
+        </div>
+      </div>
+      <div class="MsoNormal">
+        <div style="text-align: left;">
+          <table
+            cellpadding="0"
+            cellspacing="0"
+            class="tr-caption-container"
+            style="margin-left: auto; margin-right: auto; text-align: left;"
+          >
+            <tbody>
+              <tr>
+                <td style="text-align: center;">
+                  <imageanchor
+                    style="clear: right; margin-bottom: 1em; margin-left: auto; margin-right: auto;"
+                    ><img
+                      alt="Himalayan foothills"
+                      border="0"
+                      height="420"
+                      id="myImg2"
+                      img=""
+                      src="https://2.bp.blogspot.com/-Q0AL6lhKURU/VC_uhzpj-rI/AAAAAAAAASk/WfL8iGHsOTc/s640/186.JPG"
+                      title="Himalayan foothills"
+                      width="560"
+                  /></imageanchor>
+                </td>
+              </tr>
+              <tr>
+                <td class="tr-caption" style="text-align: center;">
+                  There was also <i>chai</i>. It was that awesome.&nbsp;
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <i>Chai</i> is a must. My first experience in India was up in
+          <a href="http://timesofindia.indiatimes.com/topic/Uttarakhand"
+            >Uttarakhand</a
+          >&nbsp;where&nbsp;<i>chai masala</i> is popular, which is to say
+          <i>chai</i> with cardamom and some nutmeg, and whatever else the
+          gentlemen at the chai stands and restaurants tossed in. I'm not 100%
+          sure. But it was delicious.&nbsp;&nbsp;
+        </div>
+      </div>
+      <br />
+      <div class="MsoNormal">
+        <div style="text-align: left;">
+          If you are feeling
+          <a
+            href="http://www.slate.com/articles/health_and_science/foreigners/2013/08/gin_and_tonic_kept_the_british_empire_healthy_the_drink_s_quinine_powder.single.html"
+            >neo-colonial, a gin and tonic is the traditional choice</a
+          >, although as I say, it is more of a neo-colonial thing than a
+          popular beverage option, particularly since good Hindus, good Muslims,
+          and good women are not, for various reasons, supposed to drink. People
+          drink anyway, but certainly not everyone. Alcoholics included for
+          comic effect in early Hindi-language films were nearly always
+          Christians,
+          <a href="http://bollywoodamerica.blogspot.com/2014/08/gumnaam.html"
+            >vamps</a
+          >, murderers, traitors, or members of the LGBT community. That will
+          have to wait for another blog post.&nbsp;
+        </div>
+      </div>
+      <br />
+      <u>The Clothing</u><br />
+
+      <div style="text-align: left;">
+        <a href="http://www.vogue.in/content/kalki-koechlin-kulture-shop-tshirt"
+          >Actress Kalki Koechlin recently co-designed t-shirt which reference
+          1980s Hindi films</a
+        >. They are pretty cool, and&nbsp;definitely
+        <a href="https://www.kultureshop.in/santre-womens-art-tees.html"
+          >on my wish-list</a
+        >, but there are plenty of nifty&nbsp;Bollywood-themed t-shirts out
+        there, many on <a href="http://bollytude.com/">Bollytude.com</a>. I
+        personally like<a
+          href="http://bollytude.com/collections/women/products/filmy"
+        >
+          this one</a
+        >. Another fantastic option is this "<a
+          href="http://www.cafepress.com/cp/prodpopup.aspx?prod=1228134420&amp;colorCode=White"
+          >My name is Anthony Gonzales" t-shirt</a
+        >. I would love a <i>Sholay</i> t-shirt, but have yet to find one.
+      </div>
+      <br />
+      <div style="text-align: left;">
+        The internet is also a magical source of Indian textiles, both new and
+        vintage. Kashmiri shawls, phulkari, and a slew of other textiles are
+        available through dealers, individuals, and organizations. I have never
+        ordered any of them, and so can not speak to what you will get.&nbsp;
+      </div>
+      <div class="MsoNormal">
+        <div style="text-align: left;">
+          <br />
+        </div>
+      </div>
+      <div style="text-align: left;">
+        <table
+          cellpadding="0"
+          cellspacing="0"
+          class="tr-caption-container"
+          style="float: left; text-align: left;"
+        >
+          <tbody>
+            <tr>
+              <td style="text-align: center;">
+                <imageanchor
+                  style="clear: right; margin-bottom: 1em; margin-left: auto; margin-right: auto;"
+                  ><img
+                    alt="Vintage hand-printed, hand-embroidered, hand-beaded silk green and gray"
+                    border="0"
+                    height="420"
+                    id="myImg3"
+                    img=""
+                    src="https://3.bp.blogspot.com/-rqy9JZ1kUSw/VXLLNpVzZ4I/AAAAAAAAAZA/LjBnxVODBaA/s640/017.JPG"
+                    title="Vintage hand-printed, hand-embroidered, hand-beaded silk green and gray"
+                    width="560"
+                /></imageanchor>
+              </td>
+            </tr>
+            <tr>
+              <td class="tr-caption" style="text-align: center;">
+                Vintage hand-printed, hand-embroidered, hand-beaded silk&nbsp;
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        A note on cultural appropriation: we all know that white women dressed
+        in sari is definitely cultural appropriation- or, at the very least, it
+        can be. Which is why I wear my sari to fancy South Asian parties with
+        the permission of the host or hostess (approximate once every 5 years),
+        and around the house when I am feeling melancholy. There is a time and
+        place for everything, and there are tragically few times and places for
+        my favorite sari from Old Delhi.&nbsp;
+      </div>
+      <br />
+      <u>The Adventure!</u><br />
+      <div style="text-align: left;">
+        Studying in India is the best way I have found to get people to pay for
+        me to have adventures in India. It is not the only way, but it is a
+        winning option. There are about a million reasons to study abroad, and
+        any google search of "why study abroad" will take you to lists,
+        discussions, and
+        <a
+          href="http://www.nytimes.com/roomfordebate/2013/10/17/should-more-americans-study-abroad/every-student-should-study-abroad"
+          >arguments in favor</a
+        >. I studied in India three times for a total of 14 and a half months on
+        the Subcontinent. I am in favor.
+      </div>
+      <div style="text-align: left;">
+        <br />
+        Here are some ways to do it:
+        <br />
+        <div style="text-align: left;">
+          <a href="http://www.iie.org/Programs/Gilman-Scholarship-Program"
+            >The Gilman Scholarship</a
+          >&nbsp;(undergraduate)
+        </div>
+        <div style="text-align: left;">
+          <br />
+        </div>
+        <div style="text-align: left;">
+          <a href="http://www.clscholarship.org/"
+            >The Critical Language Scholarship (CLS)</a
+          >
+          (undergraduate and graduate student)&nbsp;
+        </div>
+        <div style="text-align: left;">
+          <br />
+        </div>
+        <div style="text-align: left;">
+          <a href="http://www.indiastudies.org/language-programs/"
+            >American Institute of Indian Studies (AIIS)</a
+          >
+          (undergraduate and graduate students)
+        </div>
+        <div style="text-align: left;">
+          <br />
+        </div>
+        <div style="text-align: left;">
+          <a href="http://www2.ed.gov/programs/iegpsflasf/index.html"
+            >Foreign Language and Area Studies (FLAS)</a
+          >
+          (undergraduate? and graduate students)- these are distributed by
+          individual universities, just like the flagship language
+          programs&nbsp;
+        </div>
+        <div style="text-align: left;">
+          <br />
+        </div>
+        <div style="text-align: left;">
+          Your school, college, university, or community may offer additional
+          opportunities. Poke around and find out. The internet is for more than
+          just cat videos.
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</html>
