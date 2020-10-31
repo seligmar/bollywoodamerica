@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bollywood America</title>
+    <link
+      rel="icon"
+      href="
+data:image/png;base64,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"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/Users/maryselig/Documents/bollywoodamerica/index.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="/Users/maryselig/Documents/bollywoodamerica/index.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="home">
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <span class="close">×</span>
+        <img class="modal-content" id="img01" />
+        <div id="caption"></div>
+      </div>
+    </div>
+    <div dir="ltr" style="text-align: left;" trbidi="on">
+      <table
+        cellpadding="0"
+        cellspacing="0"
+        class="tr-caption-container"
+        style="float: left; margin-bottom: 1em; margin-right: 1em; text-align: center;"
+      >
+        <tbody>
+          <tr>
+            <td style="text-align: center;">
+              <imageanchor style="margin-left: auto; margin-right: auto;"
+                ><img
+                  alt="apples, bananas, and pomegranates on banana leaves"
+                  border="0"
+                  height="240"
+                  id="myImg1"
+                  img=""
+                  src="https://2.bp.blogspot.com/-ohqssqHM9TQ/U_PrBpwL33I/AAAAAAAAAQw/ivYTiG9a9jA/s1600/fruit.JPG"
+                  title="apples, bananas, and pomegranates on banana leaves"
+                  width="320"
+              /></imageanchor>
+            </td>
+          </tr>
+          <tr>
+            <td class="tr-caption" style="text-align: center;">
+              Fruit on banana leaves in Kolkata
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="text-align: left;">
+        Mainstream cinema is about people running toward socially prescribed
+        endings. Parallel cinema is about people running toward beginnings of
+        their own choosing. Compare the endings of
+        <i><a href="http://www.imdb.com/title/tt0112870/">DDLJ</a></i> (1995)
+        and
+        <i
+          ><a href="https://www.imdb.com/title/tt0824316/?ref_=fn_al_tt_1"
+            >Dor</a
+          ></i
+        >
+        (2006): both feature women running down station platforms to catch
+        trains, but the futures they run toward could not be more different.
+        &nbsp;<a href="http://www.imdb.com/title/tt2350496/"
+          ><i>The Lunchbox</i></a
+        >
+        (2013), directed by
+        <a href="https://www.imdb.com/name/nm3592235/?ref_=tt_ov_dr"
+          >Ritesh Batra</a
+        >
+        and set in Mumbai, is a gem of the parallel cinema scene, and&nbsp;<a
+          href="http://www.npr.org/blogs/monkeysee/2014/10/09/354808515/the-indian-film-scene-diversifies-even-as-bollywood-dominates"
+          >accessible to newcomers to Indian cinema.</a
+        >&nbsp;
+      </div>
+      <br />
+      <div class="MsoNormal">
+        <table
+          cellpadding="0"
+          cellspacing="0"
+          class="tr-caption-container"
+          style="float: right; margin-bottom: 1em; margin-left: 1em; text-align: left;"
+        >
+          <tbody>
+            <tr>
+              <td style="text-align: center;">
+                <imageanchor
+                  style="clear: right; margin-bottom: 1em; margin-left: auto; margin-right: auto;"
+                  ><img
+                    alt="Snacks being sold from a cart in Lucknow"
+                    border="0"
+                    height="240"
+                    id="myImg2"
+                    img=""
+                    src="https://4.bp.blogspot.com/-MV1xVz-DwdI/U_PqE0s_0EI/AAAAAAAAAQY/V_9KfSPOBL8/s1600/018.JPG"
+                    title="Snacks being sold from a cart in Lucknow"
+                    width="320"
+                /></imageanchor>
+              </td>
+            </tr>
+            <tr>
+              <td class="tr-caption" style="text-align: center;">
+                Snacks in Lucknow
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        Ila (<a href="http://www.imdb.com/name/nm1909661/">Nimrat Kaur</a>), an
+        unloved wife in Mumbai, sends her husband his lunch in a&nbsp;<a
+          href="http://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&amp;field-keywords=tiffin"
+          >tiffin</a
+        >&nbsp;every day. She sends her culinary devotion via
+        <a
+          href="http://articles.latimes.com/2014/feb/28/entertainment/la-et-mn-lunchbox-director-ritesh-batra-20140228"
+          >Mumbai’s extraordinary tiffin transport system of Dabbawallas</a
+        >, which boasts an accuracy rate most delivery services can only dream
+        of. However, on this particular day the tiffin reaches the desk of
+        Saajan Fernandes (<a
+          href="http://www.imdb.com/name/nm0451234/?ref_=tt_cl_t1"
+          >Irrfan Khan</a
+        >) an ornery widower on the verge of retirement. They strike up an
+        unlikely conversation through notes enclosed in the tiffin, and the
+        story develops from there. Food becomes the sometimes heavy-handed
+        metaphor- Ila feeds Saajan, Saajan feeds Shaikh (<a
+          href="http://www.imdb.com/name/nm1596350/"
+          >Nawazuddin Siddiqui</a
+        >), Auntie feeds her husband, Shaikh feeds his bride Mehrunnisa (<a
+          href="http://www.imdb.com/name/nm3831960/?ref_=tt_cl_t9"
+          >Shruti Bapna</a
+        >). When Ila sends Saajan an empty tiffin, she is making an angry point
+        of her own emotional hunger.&nbsp;
+      </div>
+      <br />
+      <div>
+        <div class="MsoNormal">
+          There is a lot of hunger in this film, which is as much about
+          loneliness as love. Khan's widower Saajan is isolation personified,
+          but the marriages of all three female characters are also ending, due
+          to ill health, death, or infidelity: Ila, Auntie-ji, who lives one
+          floor up and who is never seen, only heard, and Ila's mother. All
+          three are facing life without the companionship and support marriage
+          is meant to guarantee; loneliness can creep up on all of us without
+          warning. The counterweight to this melancholy is provided by the
+          marriage of Shaikh to Meherinusa and the budding affection between Ila
+          and Saajan. Love offers no permanent solutions, but without the hope
+          it offers, what do we have? The suicide early in this film suggests we
+          have nothing.<br />
+          <br />
+          <table
+            cellpadding="0"
+            cellspacing="0"
+            class="tr-caption-container"
+            style="float: left; margin-bottom: 1em; margin-right: 1em; text-align: right;"
+          >
+            <tbody>
+              <tr>
+                <td style="text-align: center;">
+                  <imageanchor
+                    style="clear: right; margin-bottom: 1em; margin-left: auto; margin-right: auto;"
+                    ><img
+                      alt="Guavas, cauliflowers &amp; cabbages in Nishat Ganj, Lucknow"
+                      border="0"
+                      height="240"
+                      id="myImg3"
+                      img=""
+                      src="https://1.bp.blogspot.com/-I3RbuSb-Anc/U_PrIq0fWrI/AAAAAAAAAQ4/h_VTJmF21T8/s1600/actually%2Bkindof%2Ba%2Bgood%2Bsnap.JPG"
+                      title="Guavas, cauliflowers &amp; cabbages in Nishat Ganj, Lucknow"
+                      width="320"
+                  /></imageanchor>
+                </td>
+              </tr>
+              <tr>
+                <td class="tr-caption" style="text-align: center;">
+                  Guavas, cauliflowers &amp; cabbages in Nishat Ganj, Lucknow
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div style="text-align: left;">
+            Given this, Saajan's choice to chase Ila is unsurprising. That said,
+            the ambiguity of the ending struck my mother and&nbsp;<a
+              href="http://girlabroad19.blogspot.com/"
+              >sister</a
+            >, who watched the&nbsp;film before I did. However parallel this
+            film, it was unsurprising to me- it would be highly unusual for an
+            Indian film to end with a married woman leaving her husband and
+            taking up with an older man of a different faith in a different
+            country. The ambiguity allows different viewers to imagine
+            individually acceptable endings, while also avoiding anything
+            cloyingly sweet or vulgar.&nbsp;
+          </div>
+        </div>
+        <br />
+        The only thing I love more than parallel cinema is food, and
+        contemplating this post, I am struck by how many of my memories of India
+        revolve around meals shared, discussed, organized, cooked, and enjoyed.
+        I remember the spicy soups I ate with my friend Jyoti in her cozy dining
+        room and the sangria I drank with Jamiesista, the masaala chai I drank
+        in the mornings after my long walks through the Himalayan foothills, the
+        grilled cheese and tomato soup I made for my friend Vaidehi’s birthday
+        and the chocolate cake my friend Aisha prepared for mine. I remember
+        foods I ate off steel plates on mud floors, in restaurants with white
+        table cloths, around kitchen tables, and on worn stone steps. I remember
+        the people I ate with, the conversations we shared, the person I thought
+        I was. Food is spiritual, eating or abstaining religious ritual. Small
+        wonder it flavors our memories. &nbsp; <br />
+        <br />
+        <table
+          cellpadding="0"
+          cellspacing="0"
+          class="tr-caption-container"
+          style="float: right; margin-bottom: 1em; margin-left: 1em; text-align: left;"
+        >
+          <tbody>
+            <tr>
+              <td style="text-align: center;">
+                <imageanchor
+                  style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"
+                  ><img
+                    alt="Vegetables for sale in Lucknow"
+                    border="0"
+                    height="240"
+                    id="myImg4"
+                    img=""
+                    src="https://3.bp.blogspot.com/--119bBDd-a4/U_PqYRwdNEI/AAAAAAAAAQg/3ZpGnrPzgQE/s1600/More%2Bveggies.JPG"
+                    title="Vegetables for sale in Lucknow"
+                    width="320"
+                /></imageanchor>
+              </td>
+            </tr>
+            <tr>
+              <td class="tr-caption" style="text-align: center;">
+                Vegetables for sale in Lucknow
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        Food in South Asia varies from region to region, as it does everywhere
+        else, but food ways also vary by gender, caste, religion, economics, and
+        circumstances. Women in some parts of India may fast for their husband’s
+        continued health on Tuesday; some sadhus fast for weeks. Muslims fast
+        for Ramadan, unless ill, travelling, menstruating, pregnant, nursing.
+        Some Brahmins eat fish or mutton, others do not. Some vegetarians don’t
+        eat onions, eggs, garlic. Caste-based purity hierarchies meant (can
+        still mean) that members of some castes can give to or receive water
+        from some castes, but not others. City dwellers may not maintain the
+        same food ways as relatives in a village. I was welcome in the kitchen
+        in my Sunni host family in Lucknow and upper-middle class host family in
+        Kolkata, but was shooed out with horrified gasps from the kitchen of my
+        Brahmin host family in Naukuchiyatal. &nbsp; <br />
+        <br />
+      </div>
+      <div style="text-align: left;">
+        <span style="font-family: inherit;"
+          >The most accessible guide to the complexity of South Asian food and
+          food ways I have read is
+          <i
+            ><a
+              href="http://smile.amazon.com/Curry-Cooks-Conquerors-Lizzie-Collingham/dp/0195320018/ref=sr_1_1?ie=UTF8&amp;qid=1416052668&amp;sr=8-1&amp;keywords=curry+a+tale+of+cooks+and+conquerors&amp;pebp=1416052675474"
+              >Curry: A Tale of Cooks and Conqueror</a
+            ></i
+          >s by Lizzie Collingham. Collingham charts the changing development of
+          food in South Asia, from its Ayurvedic roots through the arrival of
+          Arab, Central Asian, East Asian, and European traders and colonizers,
+          highlighting the role each group has played in the development of
+          foods now considered “quintessentially Indian”. &nbsp;The chapters
+          about what the British ate in India dragged on- there are only so many
+          ways to say that British food is not very good, and it is not exactly
+          a new thesis. However, the chapter devoted to chai is fascinating; I
+          knew the British encouraged tea production and consumption in India,
+          but never before knew how or why.&nbsp;</span
+        ><span style="font-family: inherit;"
+          >Collingham also explains Ayurvedic medicine in a way I finally
+          understood, and made 16<sup>th</sup> and 17<sup>th</sup> century
+          geopolitics compelling reading. I suspect the pictures and recipes
+          helped.&nbsp;</span
+        >The best and most readable discussion of the impacts of urbanization on
+        food ways in India is
+        <a
+          href="https://books.google.com/books?hl=en&amp;lr=&amp;id=LN4MN35b-r4C&amp;oi=fnd&amp;pg=PA90&amp;dq=eating+out+in+bombay&amp;ots=c9p2G64QPQ&amp;sig=grIf6x32r050XeBqQVkKkVqaiL4#v=onepage&amp;q=eating%20out%20in%20bombay&amp;f=false"
+          >"Dining Out in Bombay", by Frank F. Conlon.</a
+        ><br />
+        <div style="text-align: left;">
+          <br />
+        </div>
+        My mother and sister requested cultural explanations. Although not an
+        exhaustive list, here are some high points:<br />
+        <br />
+        The necklace Ila removes and leaves by her nightstand while reflecting
+        on the suicide of another woman is called a
+        <i
+          ><a
+            href="https://voylla.wordpress.com/2013/05/29/holy-jewellery-mangalsutra-history-and-significance/"
+            >mangala sutra</a
+          ></i
+        >&nbsp;(spelled as one or two words). These necklaces are tied around a
+        bride's neck as one of the wedding ceremonies. Ila also removes her
+        bangles, which also mark her as a married woman.<br />
+        <br />
+        <div class="MsoNormal">
+          Saajan Fernandes is a Christian- his Portuguese name, and the fact
+          that his wife has been buried in a cemetery make this clear.<br />
+          <br />
+        </div>
+        <div class="MsoNormal">
+          Ila's apartment includes a washing machine, which marks them as
+          middle-class. They do not, however, have a cook, which suggests they
+          are not upper-middle class.<br />
+          <br />
+        </div>
+        <div class="MsoNormal">
+          <o:p></o:p>
+        </div>
+        <div class="MsoNormal">
+          I look forward to the day when the life of a Mumbai tiffin man is also
+          the subject of a film. &nbsp;You can bet that film will fall under the
+          umbrella of ‘parallel cinema’.<br />
+          <br />
+          Film: <i>The Lunchbox</i> (2013)<br />
+          Director:&nbsp;Ritesh Batra<br />
+          Writers:&nbsp;Ritesh Batra, Vasan Bala<br />
+          Runtime:&nbsp;105 minutes<br />
+          Country: India<br />
+          Language: Hindi
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</html>

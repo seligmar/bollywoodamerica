@@ -6,9 +6,30 @@ body {
   background-color: #992b2b;
   margin-right: 200px;
   margin-left: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font: normal normal 14px Calibri; */
+  color: #fff8f3;
   /* dir: ltr; */
   text-align: left;
   /* trbidi="on" */
+  font-size: smaller;
+  /* Calibri; */
+  color: #fff8f3;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #dfbfa0;
+}
+
+a:link {
+  text-decoration: underline;
+  color: whitesmoke;
+  /* color: #ffffd2; */
+}
+
+a:hover {
+  color: lightcoral;
 }
 
 .paragraph-div {

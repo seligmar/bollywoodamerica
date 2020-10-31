@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bollywood America</title>
+    <link
+      rel="icon"
+      href="
+data:image/png;base64,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"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/Users/maryselig/Documents/bollywoodamerica/index.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="/Users/maryselig/Documents/bollywoodamerica/index.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="home">
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <span class="close">×</span>
+        <img class="modal-content" id="img01" />
+        <div id="caption"></div>
+      </div>
+        <div dir="ltr" style="text-align: left;" trbidi="on">
+          <div style="text-align: right;"></div>
+          <div class="MsoNormal">
+            <table
+              cellpadding="0"
+              cellspacing="0"
+              class="tr-caption-container"
+              style="float: right; margin-left: 1em; text-align: right;"
+            >
+              <tbody>
+                <tr>
+                  <td style="text-align: center;">
+                    <imageanchor
+                      style="clear: right; margin-bottom: 1em; margin-left: auto; margin-right: auto;"
+                      ><img
+                        alt="Rajasthan"
+                        border="0"
+                        height="420"
+                        id="myImg1"
+                        img=""
+                        src="https://3.bp.blogspot.com/-rAw_4oUcA_M/VGIDbiAX2xI/AAAAAAAAAUo/-WSMzW9u2eA/s400/142.JPG"
+                        title="Rajasthan"
+                        width="560"
+                    /></imageanchor>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr-caption" style="text-align: center;">
+                    Rajasthan
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            While at a bus stop in the middle of nowhere
+            <a href="http://en.wikipedia.org/wiki/Rajasthan">Rajasthan,</a> a
+            very old woman saw my friend and I and asked if the British had
+            returned. Although the people at the bus stop laughed at her, I was
+            struck by the incongruity of her question, or rather, by the
+            distance between us. It was sometimes easy to forget that the Raj
+            ended more recently than WWII- but maybe only for me. 
+          </div>
+          <div class="MsoNormal">
+            <br />
+          </div>
+          <div class="MsoNormal">
+            Plenty of Hindi-language films have been made about the end of the
+            Raj, from
+            <i
+              ><a href="RangDeBasanti.html"
+                >Rang de Basanti
+              </a></i
+            >(2006), to
+            <a
+              href="Bandini.html"
+              style="font-style: italic;"
+              >Bandini </a
+            >(1963), to
+            <i
+              ><a href="https://www.imdb.com/title/tt0109010/?ref_=fn_al_tt_1"
+                >1942: A Love Story</a
+              > </i
+            >(1994)<i>.</i> Comparatively few have been made &nbsp;about 1857
+            (the obvious stand-out being Satyajit Ray's 1977&nbsp;<a
+              href="https://www.imdb.com/title/tt0076696/?ref_=fn_al_tt_1"
+              ><i>Shatranj Ke Khilari</i></a
+            >&nbsp;); this is the only film I have ever seen which
+            <a href="http://www.bbc.com/news/world-asia-24487017"
+              >depicts the First Anglo War in Afghanistan</a
+            >, despite the terrible cost in human life and the importance of the
+            conflict to regional and world history. This film is based on the
+            real-life figures of Mangal Pandey and Col. Gordon Ramsey, who both
+            served in Afghanistan and were actors on the South Asian stage in
+            the conflict 1857, although liberties have obviously and openly been
+            taken.<br />
+            <br />
+            For readers not familiar with the events of 1857 (alternately called
+            the Sepoy Rebellion and the First War of Independence) the basic
+            facts are as follows- in 1857 the East India Company (EIC)
+            introduced new cartridges which were greased with the fat of hogs
+            and cattle, <i>haram</i> and sacrilegious for Muslim and Hindu
+            sepoys respectively. This, combined with many other concerns, not
+            the least among them being the EIC annexation of Oudh in 1856,
+            resulted in a series of uprisings against the EIC in central and
+            northern India, the first beginning in the cantonment in Meeruit on
+            May 10 of 1857. The EIC reasserted control in India with the fall of
+            Gwalior on June 20, 1858. Bahadur Shah Zafar, the last Mughal ruler
+            of Delhi, was deposed and sent into exile in Rangoon, Burma, and the
+            Crown assumed control of the subcontinent, establishing the British
+            Raj. Queen Victoria was crowned Empress of India in 1877.<br />
+            <br />
+            <div style="text-align: left;">
+              Set against this backdrop, Set against this backdrop, <i><a href="https://www.imdb.com/title/tt0346457/?ref_=fn_al_tt_1">Mangal Pandey: The Rising</a></i> (2005) revolves around the
+              relationship between sepoy Mangal Pandey (<a
+                href="https://www.imdb.com/name/nm0451148/?ref_=tt_cl_t1"
+                >Aamir Khan</a
+              >) and Col. Gordon Ramsey (<a
+                href="https://www.imdb.com/name/nm0827170/?ref_=tt_cl_t3"
+                >Toby Stepehens</a
+              >*), survivors of the First Anglo War in Afghanistan and BFFs.
+              Together they wrestle with the injustice inherent in the systems
+              in which they are invested- social, economic, political, gendered-
+              and make life-changing decisions about what to do about these
+              injustices.** In Bollywood there are good Britishers and bad
+              Britishers;&nbsp;<a
+                href="http://www.bbc.co.uk/films/2005/08/09/toby_stephens_the_rising_interview.shtml"
+                >Toby Stephens plays a good Britisher</a
+              >. Both men also fall in love (Pandy with slave and sex worker
+              Heera and Ramsey with rescued widow Jwala), dance a bit, and do a
+              surprising amount of growing as leaders and human beings.
+            </div>
+          </div>
+          <div dir="ltr" style="text-align: left;" trbidi="on">
+            <div class="embed-container">
+              <div style="text-align: left;">
+                <iframe
+                  allowfullscreen=""
+                  frameborder="0"
+                  mozallowfullscreen=""
+                  src="https://www.youtube.com/embed/F3w9I3cygEE?feature=player_embedded"
+                  webkitallowfullscreen=""
+                ></iframe
+                ><br />
+              </div>
+            </div>
+          </div>
+          <div class="MsoNormal">
+            <div class="separator" style="clear: both; text-align: left;">
+              <br />
+            </div>
+            <div class="separator" style="clear: both; text-align: left;">
+              The music,&nbsp;<span style="text-align: left;"
+                >inevitably by
+                <a href="http://www.arrahman.com/"
+                  >A.R. Rahman</a
+                >, provides opportunities for the relationships between Pandey
+                and Heera&nbsp;</span
+              >(<a href="http://en.wikipedia.org/wiki/Rani_Mukerji"
+                >Rani Muckerji</a
+              >)&nbsp;<span style="text-align: left;"
+                >and Ramsey and Jwala&nbsp;</span
+              >(<a href="https://www.imdb.com/name/nm0665349/?ref_=tt_cl_t5"
+                >Ameesha Patel</a
+              >)&nbsp;<span style="text-align: left;"
+                >to develop, and for the mood and moment in history to be
+                established. T</span
+              >he song <i>"</i>Rasia<i>" </i>juxtaposes the private relationship
+              between Jwala and Ramsey and the public lives of Pandey and Heera.
+              I dont know why Jwala cries (maybe she wanted the lights on), but
+              by the end of the sequence the Bollywood taboo of including
+              anything particularly explicit –and outside of marriage, no less-
+              has been flaunted, albeit with the bodies of a virginal widow and
+              a Catholic Scottish colonialist. The song's entire sequence is
+              notable for the extreme sexualizing of India's nomadic peoples-
+              the two women dancing together is particularly lacking in subtly.
+              I have long believed orientalism in Bollywood film (<a
+                href="https://www.youtube.com/watch?v=TD0eyxRnJ4Q"
+                >here, for example</a
+              >) would make an excellent dissertation topic, and this sequence
+              would be a good place to start.
+            </div>
+            <div class="separator" style="clear: both; text-align: left;"></div>
+            <div dir="ltr" style="text-align: left;" trbidi="on">
+              <div class="embed-container">
+                <iframe
+                  allowfullscreen=""
+                  frameborder="0"
+                  mozallowfullscreen=""
+                  src="https://www.youtube.com/embed/3Rx6EZsNma0"
+                  webkitallowfullscreen=""
+                ></iframe
+                ><br />
+                <br />
+              </div>
+            </div>
+            <span style="text-align: left;"
+              >The song "Main Vari Vari", in addition to being catchy, is
+              consequently a problematic reflection on the public gaze. The
+              viewer is watching Heera, but the viewer is also watching the EIC
+              watch Heera. The viewer is meant to condemn the leering men
+              visually consuming the body of a slave, who is singing about the
+              deadly power of her beloved's gestures; but while the viewer is
+              condemning the EIC, we are equally guilty of viewership. However,
+              this self-reflexive judgement is completely absent in the
+              objectification of the Indian tribal women dancing during the
+              erotic <i>"</i>Rasia<i>"</i>. Is objectification acceptable, or
+              isnt it? The film seems to answer "it depends on the women."
+              &nbsp;&nbsp;</span
+            ><br />
+            <br />
+            There are other problems with the film. The music is not up to A.R.
+            Rahman's usual standards. There is a
+            <a href="https://www.youtube.com/watch?v=kzjQnaStWV0"
+              >Holi scene</a
+            >, complete with song and dance. Why is there a Holi scene, complete
+            with song and dance? Why not, I guess, although it seems cruel to
+            make Toby Stephens dance. There are some explicit moments between
+            Pandey and Heera, which seem more-or-less gratuitous.
+            <a href="http://www.rediff.com/movies/2005/aug/26raja.htm"
+              >Reviewer Raja Sen went so far as to call the film "inane"</a
+            >.&nbsp;<a href="https://www.nytimes.com/2005/08/13/movies/with-song-and-cries-of-patriotism-india-revolts.html"
+              >A<i>&nbsp;New York Times</i>&nbsp;reviewer</a
+            >&nbsp;complained that, "the racial hatred seems rabid and
+            cartoonish, the political discussions of the opium trade become
+            preachy, and the romance feels more like a cause for dance-offs than
+            an exploration of intimacy." These reviewers miss the point. The
+            second in Amir Khan's trilogy of patriotic epics (the others being
+            <i
+              ><a
+                href="http://bollywoodamerica.blogspot.com/2014/07/lagaan-once-upon-time-in-india.html"
+                >Lagaan</a
+              >&nbsp;</i
+            >(2001) and&nbsp;<i
+              ><a
+                href="http://bollywoodamerica.blogspot.com/2018/12/rang-de-basanti.html?m=1"
+                >Rang de Basanti</a
+              > (2006)),</i
+            >&nbsp;<i>Mangal Pandey</i> is making a lot of points that are not
+            inane, cartoonish, preachy, or cause for dance offs. (Really? Dance
+            offs?)&nbsp;
+          </div>
+          <div class="MsoNormal">
+            <br />
+            Yes- British cruelty, personified by one of Ramsey's fellow EIC
+            officers, is on full rabid display. I am curious as to what he
+            thinks colonial rule looks like. More to the point, Pandey's
+            caste-hatred for his untouchable neighbor is on equally rabid
+            display. The EIC is shown to be inherently unjust-therefore, it must
+            be dismantled, by violence if necessary. But if the resulting world
+            is to be more just than the one ruled by the EIC, so too must caste
+            hierarchies be torn down. Pandey cannot be the leader the sepoys
+            (and occupied India) needs until he learns to overcome his own
+            prejudices.<br />
+            <br />
+            An even bolder rejection of prejudice is made in Pandey's choice of
+            love interest. Heera is a slave
+            and&nbsp;<i>tawaiff,&nbsp;</i>and&nbsp;therefore a completely
+            unsuitable wife for explicitly upper-caste Pandey. In a region where
+            marriage, women's sexuality, and caste boundaries are rigidly
+            intertwined, a national hero marries an explicitly lowest-caste sex
+            worker- and a mouthy one at that. Given the high premium placed on
+            the purity of national heroes everywhere, this choice is nothing
+            short of shocking. Remember- we are all still waiting for the
+            Hollywood blockbuster about
+            <a
+              href="http://www.monticello.org/site/plantation-and-slavery/thomas-jefferson-and-sally-hemings-brief-account"
+              >Thomas Jefferson's affair with Sally Hemings, his slave and dead
+              wife's half-sister</a
+            >. This aspect of the film was so controversial&nbsp;<a
+              href="http://expressindia.indianexpress.com/news/fullstory.php?newsid=52577"
+              >the BJP called for the film to be banned, claiming the film was
+              guilty of character assassination</a
+            >.
+            <a href="http://www.rediff.com/news/2005/aug/14mangal.htm"
+              >The government of UP <a href="https://www.rediff.com/news/2005/aug/14mangal.htm">considered banning the film</a> unless changes
+              were made; there were also sit-ins, protests, and damages to a
+              shop selling CDs and DVDs of the film</a
+            >.<br />
+            <br />
+            <div style="text-align: left;">
+              Ramsey's choice of widow Jwala is less controversial. He was a
+              white colonial&nbsp;and she was a virginal widow saved from sati;
+              neither are invested in the caste system's purity strictures or
+              concerned with the sanctity of Hindu marriage. More interesting is
+              the film's approach to the issue of
+              <i
+                ><a
+                  href="http://chnm.gmu.edu/wwh/modules/lesson5/lesson5.php?s=0"
+                  >sati</a
+                ></i
+              >
+              (also transliterated as <i>suttee</i>) itself. When Ramsey and
+              Pandey see a funeral complete with sati in the works, it is Ramsey
+              who insists on intervening; Pandey is shown reluctant to get
+              involved in ending the outlawed tradition, just as Ramsey was
+              reluctant to get involved in the slave trading he
+              witnessed.&nbsp;Both men have some learning to do along their path
+              to becoming national heroes. However, on the issue of
+              sati&nbsp;Ramsey- and by extension the EIC- is shown to be in
+              right. More than a battle of Indians vs. Britishers, this film
+              explores the battle of justice against injustice, in all forms and
+              from all sides. The romance in this film is not about intimacy or
+              dancing. It is about social politics.
+            </div>
+          </div>
+          <br />
+          As to the preachy criticism... well, yes. It gets a bit preachy. The
+          messages could have been more subtle; but given that the
+          <i>Times </i>reviewer missed most of them, perhaps it is best they
+          were not. Do not be dissuaded-&nbsp;<i>Mangal Pandey: The Rising</i>
+          is ultimately an extremely entertaining celebration of national myth,
+          with solid performances by beautiful people in beautiful settings to
+          beautiful music. The solidly progressive, if somewhat heavy-handed,
+          messages should be viewed as an added incentive. &nbsp; &nbsp; &nbsp;
+
+          <br />
+          <br />
+          As a final note, although it is certainly a nice touch to have Heera
+          join the fight with her very own violence (hooray agency!), I am still
+          waiting for a film about India’s real-life female freedom fighters.
+          There are some films about modern-day women terrorists, including
+          <a href="http://bollywoodamerica.blogspot.com/2014/10/dil-se.html"
+            ><i>Dil Se…</i> </a
+          >(1998) and
+          <i><a href="https://www.imdb.com/title/tt1090650/">Dhoka</a></i> (2007-
+          ghastly) but a film about women who participated in early anti-British
+          movements could be fascinating and inspiring.
+          <i><a href="https://www.imdb.com/title/tt6903440/?ref_=nm_flmg_act_8" target="_blank">Manikarnika: The Queen of Jhansi</a></i> (2019) was recently made about the life of Lakshmibai, Rani of Jansi but was plagued by very real <a href="https://www.nytimes.com/2019/12/03/opinion/bollywood-politics-india-modi.html">complaints of right-wing political bullshit</a>, but&nbsp;<a
+            href="http://www.rejectedprincesses.com/post/94637522441/noor-inayat-khan-the-spy-princess-1914-1944"
+            >Noor Inayat Khan (1914-1944), an unsung heroine who spied against
+            the Nazis in occupied Paris during WWII</a
+          >would be another excellent choice.&nbsp;<a
+            href="http://www.vogue.com/946862/scarlett-johansson-emma-stone-summer-movies/#1"
+            >In spite of some hopeful signs in the direction of female-centric
+            films</a
+          >, most cinema- in every industry- concerns itself mostly with
+          men.&nbsp;&nbsp;
+          <br />
+          <div class="MsoNormal">
+            <br />
+          </div>
+          <div class="MsoNormal">
+            For a fascinating discussion of the First Anglo War in Afghanistan I
+            recommend&nbsp;<i
+              ><a
+                href="http://www.amazon.com/Return-King-Battle-Afghanistan-1839-42/dp/0307948536"
+                >Return of a King: The Battle for Afghanistan, 1839-42</a
+              ></i
+            >
+            by William Dalrymple.&nbsp;It lays out the conflict within the
+            context of Afghan, British, and Great Game politics, as well as
+            explaining the consequences of the conflict on the events of 1857.
+            There are probably other resources, but &nbsp;I cant imagine any are
+            more readable. Dalrymple’s
+            <i
+              ><a
+                href="http://www.amazon.com/Last-Mughal-Fall-Dynasty-Delhi/dp/1400078334/ref=la_B000API5E8_1_3?s=books&amp;ie=UTF8&amp;qid=1415406391&amp;sr=1-3"
+                >The Last Mughal: The Fall of a Dynasty: Delhi, 1857</a
+              > </i
+            >is also an interesting read , although I must add a caveat- most
+            South Asianists take umbrage with Dalrymple’s academic work.
+            Everyone loves
+            <i
+              ><a
+                href="http://www.amazon.com/City-Djinns-Delhi-William-Dalrymple/dp/0142001007/ref=la_B000API5E8_1_5?s=books&amp;ie=UTF8&amp;qid=1415406391&amp;sr=1-5"
+                >City of Djinns: A Year in Delhi</a
+              ></i
+            >.<br />
+ 
+          </div>
+          <div class="MsoNormal">
+            <br />
+            Film:&nbsp;<a
+              href="https://www.imdb.com/title/tt0346457/?ref_=fn_al_tt_1"
+              style="font-style: italic;"
+              >Mangal Pandey: The Rising</a
+            >&nbsp;(2005)
+          </div>
+          <div class="MsoNormal">
+            <div class="MsoNormal">
+              Director:&nbsp;Ketan Mehta<br />
+              Writer:&nbsp;Farrukh Dhondy<br />
+              Runtime: 151 Minutes<br />
+              Language: Hindi<br />
+              Country: India<br />
+              <br />
+            </div>
+            <div class="MsoNormal"></div>
+            *Evidently Stephens had to learn his lines phonetically; his accent
+            is unusually good for a white guy in a Bollywood film.&nbsp;
+          </div>
+          <div class="MsoNormal">
+            **They also wrestle with one another in a manner that can only be
+            called homoerotic.
+          </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</html>
