@@ -24,7 +24,8 @@ a:visited {
 
 a:link {
   text-decoration: underline;
-  color: #ffffd2;
+  color: whitesmoke;
+  /* color: #ffffd2; */
 }
 
 a:hover {
