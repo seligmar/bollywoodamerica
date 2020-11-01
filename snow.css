@@ -1,53 +1,34 @@
 .editor-stage .snow {
   height: 50px;
-
   background: #fff;
 }
 
 .snow {
   position: fixed;
-
   pointer-events: none;
-
   top: 0;
-
   left: 0;
-
   right: 0;
-
   bottom: 0;
-
   height: 100vh;
-
   background: none;
-
   background-image: url('https://s3-eu-west-1.amazonaws.com/static-ressources/s1.png'),
     url('https://s3-eu-west-1.amazonaws.com/static-ressources/s2.png'),
     url('https://s3-eu-west-1.amazonaws.com/static-ressources/s3.png');
-
   z-index: 100;
-
   -webkit-animation: snow 8s linear infinite;
-
   -moz-animation: snow 8s linear infinite;
-
   -ms-animation: snow 8s linear infinite;
-
   animation: snow 8s linear infinite;
 }
 
 .button {
   font-size: 12px;
-
   border-radius: 5%;
-
   background-color: #a62929;
   color: white;
-
   text-align: center;
-
   text-decoration: none;
-
   display: inline-block;
 }
 
@@ -115,6 +96,7 @@
   max-width: 100%;
   height: auto;
 }
+
 .embed-container iframe,
 .embed-container object,
 .embed-container embed {
