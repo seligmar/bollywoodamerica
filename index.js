@@ -5,10 +5,10 @@
 // //
 //var $ = $
 
-$(document).ready(function () {
-  checkForModalImages()
-  checkForLinks()
-})
+// $(document).ready(function () {
+//   checkForModalImages()
+//   checkForLinks()
+// })
 
 var allowedKeys = {
   37: 'left',
@@ -119,5 +119,5 @@ function addLinks (links) {
 }
 //function createHeader () {}
 
-// checkForModalImages()
-// createHeader()
+checkForModalImages()
+//createHeader()
