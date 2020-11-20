@@ -35,7 +35,6 @@ var konamiCode = [
 
 // a variable to remember the 'position' the user has reached so far.
 var konamiCodePosition = 0
-var img
 var modalImg = document.getElementById('img01')
 var captionText = document.getElementById('caption')
 var modal = document.getElementById('myModal')
@@ -49,9 +48,10 @@ function checkForModalImages () {
 }
 
 function addIdToImage (imageList) {
+  var img
   for (let i = 1; i < imageList.length; i++) {
     img = imageList[i]
-    img.id = `${'myImg' + i}`
+    img.id = 'myImg' + i
     addClick(img)
   }
 }
