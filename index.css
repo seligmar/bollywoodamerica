@@ -37,6 +37,13 @@ a:hover {
   margin-bottom: 15px;
 }
 
+.footnote {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 10px;
+  vertical-align: text-top;
+}
+
 /* .caption {
   text-align: center;
 } */
