@@ -75,6 +75,7 @@ span.onclick = function () {
 
 function resizeImg (height, width) {
   var modalContent = document.querySelector('.modal-content')
+  console.log('width', width * 1.5)
   //if (height === 0) modalContent.style.height = screenHeight * 0.75 + 'px'
   //if (width === 0) modalContent.style.width = screenWidth * 0.75 + 'px'
   modalContent.style.height = height * 1.5 + 'px'
