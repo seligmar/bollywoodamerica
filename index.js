@@ -111,6 +111,7 @@ function activateCheats () {
 
 function checkForLinks () {
   var allLinks = document.querySelectorAll('a')
+  console.log(allLinks)
   if (allLinks.length > 0) addLinks(allLinks)
 }
 
@@ -120,4 +121,5 @@ function addLinks (links) {
 //function createHeader () {}
 
 checkForModalImages()
+checkForLinks()
 //createHeader()
