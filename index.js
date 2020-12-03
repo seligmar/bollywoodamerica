@@ -52,7 +52,11 @@ function addIdToImage (imageList) {
   for (let i = 1; i < imageList.length; i++) {
     img = imageList[i]
     img.id = 'myImg' + i
-    addClick(img)
+    if (!img.alt || !img.title) {
+      addAltText(img)
+    } else {
+      addClick(img)
+    }
   }
 }
 
@@ -66,6 +70,17 @@ function addClick (img) {
     captionText.innerHTML = this.alt
     resizeImg(height, width)
   }
+}
+
+function addAltText (img) {
+  console.log(img)
+  if (!img.alt) {
+    img.alt = img.title
+  }
+  if (!img.title) {
+    img.title = img.alt
+  }
+  addClick(img)
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -111,7 +126,6 @@ function activateCheats () {
 
 function checkForLinks () {
   var allLinks = document.querySelectorAll('a')
-  console.log(allLinks)
   if (allLinks.length > 0) addLinks(allLinks)
 }
 

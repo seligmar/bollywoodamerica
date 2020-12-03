@@ -3,11 +3,10 @@ body {
 }
 
 .home {
-  background-color: #992b2b;
+  /* background-color: #992b2b; */
   margin-right: 200px;
   margin-left: 200px;
   font-family: Arial, Helvetica, sans-serif;
-  /* font: normal normal 14px Calibri; */
   color: #fff8f3;
   /* dir: ltr; */
   text-align: left;
@@ -44,10 +43,6 @@ a:hover {
   vertical-align: text-top;
 }
 
-/* .caption {
-  text-align: center;
-} */
-
 .hero-image {
   background-image: url('images/Background Image copy 2.jpg');
   background-color: #992b2b; /* Used if the image is unavailable */
@@ -64,6 +59,18 @@ a:hover {
 /* the images */
 td {
   text-align: center;
+}
+
+.img-float-left {
+  float: left;
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
+.img-float-right {
+  float: right;
+  margin-bottom: 1em;
+  margin-left: 1em;
 }
 
 /* the youtube  */
