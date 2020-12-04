@@ -118,6 +118,14 @@ document.addEventListener('keydown', function (e) {
   }
 })
 
+// the youtube videos- code started not finished
+
+function getYouTubeVideos () {
+  var videoList = document.querySelectorAll('iFrame')
+  console.log('videoList', videoList[0].clientWidth)
+  console.log('screen width', window.innerWidth)
+}
+
 function activateCheats () {
   window.open(
     'https://1.bp.blogspot.com/-umQrN2eEM-I/XIO2YtqqfsI/AAAAAAAAA-s/Xl3Vt12ZjwER5q0LVarRV4m7Hzzh2IOpQCLcBGAs/s640/Mughal-e-Azim%2Bfor%2Bkonami.gif'
@@ -136,4 +144,5 @@ function addLinks (links) {
 
 checkForModalImages()
 checkForLinks()
+getYouTubeVideos()
 //createHeader()
