@@ -73,6 +73,11 @@ td {
   margin-left: 1em;
 }
 
+.img-float-center {
+  float: center;
+  margin-bottom: 1em;
+}
+
 /* the youtube  */
 .embed-container {
   position: relative;
