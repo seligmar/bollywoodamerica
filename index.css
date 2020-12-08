@@ -199,3 +199,8 @@ td {
 figure {
   align-self: right;
 }
+
+.urdu-text {
+  text-align: right;
+  font-size: large;
+}
