@@ -3,7 +3,7 @@
 // script.type = 'text/javascript'
 // document.getElementsByTagName('head')[0].appendChild(script)
 // //
-//var $ = $
+// var $ = $
 
 // $(document).ready(function () {
 //   checkForModalImages()
@@ -49,7 +49,7 @@ function checkForModalImages () {
 
 function addIdToImage (imageList) {
   var img
-  for (let i = 1; i < imageList.length; i++) {
+  for (let i = 1; i < imageList.length + 1; i++) {
     img = imageList[i]
     img.id = 'myImg' + i
     if (!img.alt || !img.title) {
@@ -64,6 +64,12 @@ function addClick (img) {
   if (typeof img === 'undefined') return
   var height = img.height
   var width = img.width
+  if (width === 0) {
+    width = resetWidth(img)
+  }
+  if (height === 0) {
+    height = resetHeight(img)
+  }
   img.onclick = function () {
     modal.style.display = 'block'
     modalImg.src = this.src
@@ -72,8 +78,19 @@ function addClick (img) {
   }
 }
 
-function addAltText (img) {
+function resetHeight (img) {
   console.log(img)
+  var newHeight = 0
+  return newHeight
+}
+
+function resetWidth (img) {
+  var newWidth = img
+  return newWidth
+}
+
+function addAltText (img) {
+  console.log(img.height, img.width)
   if (!img.alt) {
     img.alt = img.title
   }
@@ -90,12 +107,8 @@ span.onclick = function () {
 
 function resizeImg (height, width) {
   var modalContent = document.querySelector('.modal-content')
-  if (!width) {
-    modalContent.style.width = 300 + 'px'
-  } else {
-    modalContent.style.height = height * 1.5 + 'px'
-    modalContent.style.width = width * 1.5 + 'px'
-  }
+  modalContent.style.height = height * 1.5 + 'px'
+  modalContent.style.width = width * 1.5 + 'px'
 }
 
 // add keydown event listener
@@ -142,9 +155,9 @@ function checkForLinks () {
 function addLinks (links) {
   links.forEach(link => link.setAttribute('target', '_blank'))
 }
-//function createHeader () {}
+// function createHeader () {}
 
 checkForModalImages()
 checkForLinks()
 getYouTubeVideos()
-//createHeader()
+// createHeader()
