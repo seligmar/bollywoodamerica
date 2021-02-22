@@ -48,8 +48,11 @@ function checkForModalImages () {
 }
 
 function addIdToImage (imageList) {
+  console.log(imageList)
   var img
-  for (let i = 1; i < imageList.length + 1; i++) {
+  for (let i = 0; i < imageList.length + 1; ++i) {
+    if (imageList[i] === undefined) return
+    console.log(imageList[i])
     img = imageList[i]
     img.id = 'myImg' + i
     if (!img.alt || !img.title) {
@@ -137,6 +140,7 @@ document.addEventListener('keydown', function (e) {
 
 function getYouTubeVideos () {
   var videoList = document.querySelectorAll('iFrame')
+  if (videoList.length === 0) return
   console.log('videoList', videoList[0].clientWidth)
   console.log('screen width', window.innerWidth)
 }

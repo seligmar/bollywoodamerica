@@ -31,6 +31,19 @@ a:hover {
   color: lightcoral;
 }
 
+button {
+  cursor: pointer;
+}
+
+img {
+  cursor: pointer;
+}
+
+p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 /* this should probably be a <p> class instead  */
 .paragraph-div {
   margin-top: 15px;
@@ -77,6 +90,15 @@ td {
 .img-float-center {
   float: center;
   margin-bottom: 1em;
+}
+
+.vanessaIvesContainer {
+  width: 100%;
+}
+
+.vanessaIves {
+  height: auto;
+  max-width: 100%;
 }
 
 /* the youtube  */
