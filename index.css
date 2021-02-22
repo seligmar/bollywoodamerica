@@ -92,6 +92,15 @@ td {
   margin-bottom: 1em;
 }
 
+.vanessaIvesContainer {
+  width: 100%;
+}
+
+.vanessaIves {
+  height: auto;
+  max-width: 100%;
+}
+
 /* the youtube  */
 .embed-container {
   position: relative;
