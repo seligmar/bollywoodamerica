@@ -39,6 +39,11 @@ img {
   cursor: pointer;
 }
 
+p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 /* this should probably be a <p> class instead  */
 .paragraph-div {
   margin-top: 15px;
