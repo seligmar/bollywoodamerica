@@ -153,10 +153,25 @@ function activateCheats () {
 
 function checkForLinks () {
   var allLinks = document.querySelectorAll('a')
-  if (allLinks.length > 0) addLinks(allLinks)
+  var links = []
+  if (allLinks.length === 0) return
+  else {
+    for (let i = 0; i < allLinks.length; ++i) {
+      if (allLinks[i].className !== 'footnote') {
+        links.push(allLinks[i])
+      }
+    }
+  }
+  addLinks(links)
 }
 
 function addLinks (links) {
+  // for (let i = 0; i < links.length; ++i) {
+  //   if (links[i].hasClass('footnote'){
+  //     bre
+  //   })
+  // }
+
   links.forEach(link => link.setAttribute('target', '_blank'))
 }
 // function createHeader () {}
