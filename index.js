@@ -157,7 +157,7 @@ function checkForLinks () {
   if (allLinks.length === 0) return
   else {
     for (let i = 0; i < allLinks.length; ++i) {
-      if (allLinks[i].className !== 'footnote') {
+      if (!allLinks[i].classList.contains('footnote')) {
         links.push(allLinks[i])
       }
     }
@@ -166,12 +166,6 @@ function checkForLinks () {
 }
 
 function addLinks (links) {
-  // for (let i = 0; i < links.length; ++i) {
-  //   if (links[i].hasClass('footnote'){
-  //     bre
-  //   })
-  // }
-
   links.forEach(link => link.setAttribute('target', '_blank'))
 }
 // function createHeader () {}
