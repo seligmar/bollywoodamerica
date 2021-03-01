@@ -153,7 +153,16 @@ function activateCheats () {
 
 function checkForLinks () {
   var allLinks = document.querySelectorAll('a')
-  if (allLinks.length > 0) addLinks(allLinks)
+  var links = []
+  if (allLinks.length === 0) return
+  else {
+    for (let i = 0; i < allLinks.length; ++i) {
+      if (!allLinks[i].classList.contains('footnote')) {
+        links.push(allLinks[i])
+      }
+    }
+  }
+  addLinks(links)
 }
 
 function addLinks (links) {
