@@ -2,6 +2,15 @@ body {
   background-color: #992b2b;
 }
 
+body.blueSetting {
+  background-color: #c2deff;
+}
+
+body.greenSetting {
+  background-color: #d0f2dd;
+  color: black;
+}
+
 .home {
   /* background-color: #992b2b; */
   margin-right: 200px;
