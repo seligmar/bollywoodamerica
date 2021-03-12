@@ -42,6 +42,10 @@ var span = document.getElementsByClassName('close')[0]
 var screenWidth = window.innerWidth * 0.75
 var screenHeight = window.innerHTML * 0.75
 
+var settingsBtn = document.querySelector('.green-btn')
+
+settingsBtn.addEventListener('click', changeBackground)
+
 function checkForModalImages () {
   var imageList = document.querySelectorAll('img')
   if (imageList.length > 0) addIdToImage(imageList)
@@ -168,9 +172,15 @@ function checkForLinks () {
 function addLinks (links) {
   links.forEach(link => link.setAttribute('target', '_blank'))
 }
+
+function changeBackground () {
+  var heroImg = document.querySelector('body')
+  heroImg.classList.add('greenSetting')
+}
 // function createHeader () {}
 
 checkForModalImages()
 checkForLinks()
 getYouTubeVideos()
+
 // createHeader()
