@@ -42,9 +42,10 @@ var span = document.getElementsByClassName('close')[0]
 var screenWidth = window.innerWidth * 0.75
 var screenHeight = window.innerHTML * 0.75
 
-var settingsBtn = document.querySelector('.green-btn')
+//todo: make img scale to screensize - right now they do not
+//var settingsBtn = document.querySelector('.green-btn')
 
-settingsBtn.addEventListener('click', changeBackground)
+//settingsBtn.addEventListener('click', changeBackground)
 
 function checkForModalImages () {
   var imageList = document.querySelectorAll('img')
@@ -173,10 +174,12 @@ function addLinks (links) {
   links.forEach(link => link.setAttribute('target', '_blank'))
 }
 
-function changeBackground () {
-  var heroImg = document.querySelector('body')
-  heroImg.classList.add('greenSetting')
-}
+// function changeBackground () {
+//   var docBody = document.querySelector('body')
+//   var home = document.querySelector('.home')
+//   home.classList.add('home-green')
+//   docBody.classList.add('greenSetting')
+// }
 // function createHeader () {}
 
 checkForModalImages()
