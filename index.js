@@ -42,10 +42,10 @@ var span = document.getElementsByClassName('close')[0]
 var screenWidth = window.innerWidth * 0.75
 var screenHeight = window.innerHTML * 0.75
 
-//todo: make img scale to screensize - right now they do not
-//var settingsBtn = document.querySelector('.green-btn')
+// todo: make img scale to screensize - right now they do not
+// var settingsBtn = document.querySelector('.green-btn')
 
-//settingsBtn.addEventListener('click', changeBackground)
+// settingsBtn.addEventListener('click', changeBackground)
 
 function checkForModalImages () {
   var imageList = document.querySelectorAll('img')
